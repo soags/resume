@@ -1,5 +1,6 @@
 import { Shield, ShieldLink } from '../components/shield'
 import { PortfolioCard } from '../components/portfolio-card'
+import { ProjectCard } from '../components/project-card'
 
 # 職務経歴書
 
@@ -109,87 +110,215 @@ import { PortfolioCard } from '../components/portfolio-card'
   - 提案資料の作成・説明
   - ヒアリング・工数見積
 
-#### 生産実績分析システム開発
+#### プロジェクト
 
-工場における生産実績や設備稼働状況を登録・分析するシステムを開発しました。
+<div className="mt-4 flex flex-col gap-4">
 
-- プロジェクト規模:
-  - 2~4 人チームでのウォータフォール開発
-- 役割
-  - プロジェクトマネージャー
-  - リードエンジニア
-- 使用技術
-  - Vue.js / Electron / C# / SQL Server / IBM i / Windows Server / MotionBoard
-- 実現したこと
-  - Vue.jsを使用したSPA + SPAを参照するElectron のハイブリッドアプリケーション
-  - RFID の読み取りに対応
-  - かんばんの QR コード読み取りに対応 (複数フォーマットかつフォーマットの自動判定に対応)
-  - オフライン時のリクエストの自動リトライに対応
-    - Electron が BackgroundSync に対応していなかったため、スクラッチでリトライ処理を実装
-    - リトライリクエストの HTTP ヘッダーを使用して、「オフラインだった時間」を補正する機能を実装
+<ProjectCard
+  title="生産実績分析システム開発"
+  description="工場における生産実績や設備稼働状況を登録・分析するシステムを開発しました。"
+  teamSize="2~4 人"
+  roles={["リードエンジニア", "プロジェクトマネージャー"]}
+  highlights={[
+    "Vue.jsを使用したSPA + SPAを参照するElectron のハイブリッドアプリケーション",
+    "RFID の読み取りに対応",
+    "かんばんの QR コード読み取りに対応 (複数フォーマットかつフォーマットの自動判定に対応)",
+    "オフライン時のリクエストの自動リトライに対応",
+    "Electron が BackgroundSync に対応していなかったため、スクラッチでリトライ処理を実装",
+    "リトライリクエストの HTTP ヘッダーを使用して、「オフラインだった時間」を補正する機能を実装"
+  ]}
+  techs={[
+    {
+      alt:"Vue.js",
+      badgeContent:"Vue.js-4FC08D",
+      logo:"vuedotjs",
+      logoColor:"white"
+    },
+    {
+      alt:"Electron",
+      badgeContent:"Electron-47848F",
+      logo:"electron",
+      logoColor:"white"
+    },
+    {
+      alt:"CSharp",
+      badgeContent:"C%23-512BD4",
+      logo:"",
+      logoColor:"white"
+    },
+    {
+      alt:"SQL_Server",
+      badgeContent:"SQL_Server-512BD4",
+      logo:"sqlserver",
+      logoColor:"white"
+    },
+    {
+      alt:"Windows_Server",
+      badgeContent:"Windows_Server-512BD4",
+      logo:"windowsserver"
+    }
+  ]}
+/>
 
-#### 大手製造業向け原価企画システム開発
+<ProjectCard
+  title="大手製造業向け原価企画システム開発"
+  description="プレス・溶接・調達・輸送・型など製品の製造原価を集計・分析するシステムを開発しました。"
+  teamSize="2~5 人"
+  roles={["リードエンジニア", "プロジェクトマネージャー"]}
+  highlights={[
+    "ERP システム、PDM システムとの各種情報の自動連携に対応",
+    "原価計算に用いる根拠情報の Excel 取込に対応",
+    "原価計算条件を変更したシミュレーション計算が可能"  
+  ]}
+  techs={[
+    {
+      alt:"VB.NET",
+      badgeContent:"VB.NET-512BD4",
+      logo:"",
+      logoColor:"white"
+    },
+    {
+      alt:"Oracle",
+      badgeContent:"Oracle-F80000",
+      logo:"oracle",
+      logoColor:"white"
+    },
+    {
+      alt:"Windows_Server",
+      badgeContent:"Windows_Server-512BD4",
+      logo:"windowsserver",
+      logoColor:"white"
+    }
+  ]}
+/>
 
-プレス・溶接・調達・輸送・型など製品の製造原価を集計・分析するシステムを開発しました。
+<ProjectCard
+  title="人事総務ポータルサイト開発"
+  description="およそ 1 万人が使用する人事総務ポータルサイトを開発しました。機能としては勤怠登録、マイナンバー申請、給与振込口座の申請、給与明細メール配信などがあります。"
+  teamSize="2~4 人"
+  roles={["リードエンジニア", "ブリッジ (海外子会社のメンバーに指示)"]}
+  highlights={[
+    "PHP を触ったことがなく、社内でも PHP の実績はなかったが、勉強してプロジェクトを完遂",
+    "1 万人に対する給与明細発行通知のメール配信が可能 (Redisをキューとして使ったスクラッチ開発)",
+    "スマホカメラで証明書類・顔写真の撮影が可能 (WebRTC + SVG)"
+  ]}
+  techs={[
+    {
+      alt:"Vue.js",
+      badgeContent:"Vue.js-4FC08D",
+      logo:"vuedotjs",
+      logoColor:"white"
+    },
+    {
+      alt:"Laravel",
+      badgeContent:"Laravel-FF2D20",
+      logo:"laravel",
+      logoColor:"white"
+    },
+    {
+      alt:"Redis",
+      badgeContent:"Redis-DC382D",
+      logo:"redis",
+      logoColor:"white"
+    },
+    {
+      alt:"IBM_i",
+      badgeContent:"IBM_i-525292",
+      logo:"ibm",
+      logoColor:"white"
+    },
+    {
+      alt:"Windows_Server",
+      badgeContent:"Windows_Server-512BD4",
+      logo:"windowsserver"
+    }
+  ]}
+/>
 
-- プロジェクト規模:
-  - 2~5 人チームでのウォータフォール開発 (15 人月)
-- 役割
-  - プロジェクトマネージャー
-  - リードエンジニア
-- 使用技術
-  - VB.NET / Oracle / Windows Server
-- 実現したこと
-  - ERP システム、PDM システムとの各種情報の自動連携に対応
-  - 原価計算に用いる根拠情報の Excel 取込に対応
-  - 原価計算条件を変更したシミュレーション計算が可能
+<ProjectCard
+  title="標的型攻撃メール訓練ツール"
+  description="標的型攻撃メールを実際に送信してメールを開いた人を特定・集計し注意喚起を行うシステムを開発しました。"
+  teamSize="1 人"
+  roles={["全て"]}
+  highlights={[
+    "送信元を偽装した標的型攻撃メールの送信が可能",
+    "ユーザーが任意で送信元や件名、本文などを変更可能",
+    "メール内のリンクにトラップを仕込み、リンクを開いた人を特定・集計することが可能",
+    "添付された Excel ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能",
+    "添付された Word ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能",
+    "添付された PDF ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能"
+  ]}
+  techs={[
+    {
+      alt:"Vue.js",
+      badgeContent:"Vue.js-4FC08D",
+      logo:"vuedotjs",
+      logoColor:"white"
+    },
+    {
+      alt:"CSharp",
+      badgeContent:"C%23-512BD4",
+      logo:"",
+      logoColor:"white"
+    },
+    {
+      alt:"PostgreSQL",
+      badgeContent:"PostgreSQL-4169E1",
+      logo:"postgresql",
+      logoColor:"white"
+    },
+    {
+      alt:"Windows_Server",
+      badgeContent:"Windows_Server-512BD4",
+      logo:"windowsserver"
+    }
+  ]}
+/>
 
-#### 人事総務ポータルサイト開発
+<ProjectCard
+  title="社内システムの開発基盤構築"
+  description="社内システムの再構築にあたって、技術選定・開発基盤構築・技術サポートを担当しました。"
+  highlights={[
+    "コンテナ開発を試験的に導入",
+    "全社的なVB.NET から C# への移行を開始",
+    "Vue.jsを使用したSPA開発を提案"
+  ]}
+  techs={[
+    {
+      alt:"Vue.js",
+      badgeContent:"Vue.js-4FC08D",
+      logo:"vuedotjs",
+      logoColor:"white"
+    },
+    {
+      alt:"CSharp",
+      badgeContent:"C%23-512BD4",
+      logo:"",
+      logoColor:"white"
+    },
+    {
+      alt:"Docker",
+      badgeContent:"Docker-2496ED",
+      logo:"docker",
+      logoColor:"white"
+    },
+    {
+      alt:"AWS_Fargate",
+      badgeContent:"AWS_Fargate-FF9900",
+      logo:"awsfargate",
+      logoColor:"white"
+    },
+    {
+      alt:"Amazon_RDS",
+      badgeContent:"Amazon_RDS-527FFF",
+      logo:"amazonrds",
+      logoColor:"white"
+    }
+  ]}
 
-およそ 1 万人が使用する人事総務ポータルサイトを開発しました。
-機能としては勤怠登録、マイナンバー申請、給与振込口座の申請、給与明細メール配信などがあります。
+/>
 
-- プロジェクト規模:
-  - 2~4 人チームでのウォータフォール開発
-- 役割
-  - リードエンジニア
-  - ブリッジ (海外子会社のメンバーに指示)
-- 使用技術
-  - Vue.js / Laravel / Redis / IBM i / Windows Server
-- 実現したこと
-  - PHP できるようになった
-    - PHP を触ったことがなく、社内でも PHP の実績はなかったが、勉強してプロジェクトを完遂
-  - 1 万人に対する給与明細発行通知のメール配信が可能 (Redisをキューとして使ったスクラッチ開発)
-  - スマホカメラで証明書類・顔写真の撮影が可能 (WebRTC + SVG)
-
-#### 標的型攻撃メール訓練ツール
-
-標的型攻撃メールを実際に送信してメールを開いた人を特定・集計し注意喚起を行うシステムを開発しました。
-
-- プロジェクト規模:
-  - 1 人
-- 役割
-  - 全て
-- 使用技術
-  - Vue.js / C# / PostgreSQL / Windows Server
-- 実現したこと
-  - 送信元を偽装した標的型攻撃メールの送信が可能
-  - ユーザーが任意で送信元や件名、本文などを変更可能
-  - メール内のリンクにトラップを仕込み、リンクを開いた人を特定・集計することが可能
-  - 添付された Excel ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能
-  - 添付された Word ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能
-  - 添付された PDF ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能
-
-#### 社内工数入力システム再構築の開発基盤構築
-
-社内の工数入力システムの再構築にあたって、技術選定・開発基盤構築・技術サポートを担当しました。
-
-- 使用技術
-  - Vue.js / C# / Docker / AWS Fargate / AWS RDS
-- 実現したこと
-  - コンテナ開発を試験的に導入
-  - 全社的なVB.NET から C# への移行を開始
-  - Vue.jsを使用したSPA開発を提案
+</div>
 
 ## 個人開発
 

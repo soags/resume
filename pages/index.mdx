@@ -2,16 +2,20 @@
 
 ## 基本情報
 
-- 氏名: 曽我 周平 (Soga Shuhei)
-- 生年月日: 1994年3月19日
-- 居住地: 愛知県
-- メールアドレス: [s.iehuys+work@gmail.com](mailto:s.iehuys+work@gmail.com)
+| key | value |
+|:--|:--|
+|氏名|曽我 周平 (Soga Shuhei)|
+|生年月日|1994年3月19日|
+|居住地|愛知県|
+|メールアドレス|s.iehuys+work@gmail.com|
+|GitHub|https://github.com/soags|
+|Zenn|https://zenn.dev/soags|
 
 ## 職務経歴サマリ
 
 | 会社      | 期間           | 業務内容                                                                    |
 | --------- | -------------- | --------------------------------------------------------------------------- |
-| S株式会社 | 2016/04 - 現在 | ・製造業向け各種業務システムの受託開発<br />・システム開発部/チームリーダー |
+| S株式会社 | 2016/04 - 現在 | 製造業向け各種業務システムの受託開発 |
 
 ## 保有スキル
 
@@ -29,7 +33,7 @@
 
 ## 技術スタック
 
-<div>
+<div className="bg-red-500">
 
 <div>
 
@@ -119,7 +123,7 @@
     - Electron が BackgroundSync に対応していなかったため、スクラッチでリトライ処理を実装
     - リトライリクエストの HTTP ヘッダーを使用して、「オフラインだった時間」を補正する機能を実装
 
-##### 大手製造業向け原価企画システム開発
+#### 大手製造業向け原価企画システム開発
 
 プレス・溶接・調達・輸送・型など製品の製造にどの程度の原価がかかっているかを集計・分析する原価企画システムを開発しました。
 
@@ -136,7 +140,7 @@
   - プレス・溶接・調達・輸送・型など原価計算に用いる根拠情報の Excel 取込
   - 原価計算条件を変更したシミュレーション計算
 
-##### 人事総務ポータルサイト開発
+#### 人事総務ポータルサイト開発
 
 およそ 1 万人が使用する人事総務ポータルサイトを開発しました。
 機能としては勤怠登録、マイナンバー申請、給与振込口座の申請、給与明細メール配信などがあります。
@@ -154,7 +158,7 @@
   - 1 万人に対する給与明細発行通知のメール配信
   - スマホカメラで証明書類・顔写真の撮影 (WebRTC + SVG)
 
-##### 標的型攻撃ペネトレーションテストツール開発
+#### 標的型攻撃ペネトレーションテストツール開発
 
 標的型攻撃メールを実際に送信してメールを開いた人を特定・集計し注意喚起を行うシステムの開発しました。
 
@@ -172,7 +176,7 @@
   - 添付された Word ファイルにトラップを仕込み、ファイルを開いた人を特定する
   - 添付された PDF ファイルにトラップを仕込み、ファイルを開いた人を特定する
 
-##### 社内工数入力システム再構築の開発基盤構築
+#### 社内工数入力システム再構築の開発基盤構築
 
 社内の工数入力システムの再構築にあたって、技術選定・開発基盤構築・技術サポートを担当しました。
 
@@ -198,29 +202,23 @@
 
 ## 個人開発
 
-### [zenn-create](https://github.com/soags/zenn-create)
-
-- Zenn CLI のnew:article、new:bookの動作を改良する非公式のCLIツール
-- 使用技術: TypeScript
-- 記事: [Zenn CLI のSlug 動作を改良するCLIを作った](https://zenn.dev/soags/articles/zenn-create-96644c4bc7a0fd)
-
-### [tab-cutter](https://github.com/soags/tab-cutter) 
-  
-- 現在のタブからウィンドウを2つに分割するChrome拡張機能
-- 使用技術: TypeScript
-- [Chrome Web ストア](https://chromewebstore.google.com/detail/tab-cutter/mekmindbhhjinkmgdjabpgfkaekhmgkj)
-
-### [temp-dir-cli](https://github.com/soags/temp-dir-cli)
-- とりあえずファイル置き場として、一時フォルダを作成して開く`tempdir`コマンド
-- 使用技術: TypeScript
-
-### [aspnet-oidc-hybrid](https://github.com/soags/aspnet-oidc-hybrid)
-- 既存の認証をもつASP.NETプロジェクトに、OpenID Connect を後付けで追加する方法についての検証プロジェクト
-- 使用技術: C#, ASP.NET Core, OpenID Connect
-
-### [resume](https://zenn.dev/soags/resume)
-- 職務経歴書のWebサイト
-- 使用技術: Nextra
+- [zenn-create](https://github.com/soags/zenn-create)
+  - Zenn CLI のnew:article、new:bookの動作を改良する非公式のCLIツール
+  - 使用技術: TypeScript
+  - 記事: [Zenn CLI のSlug 動作を改良するCLIを作った](https://zenn.dev/soags/articles/zenn-create-96644c4bc7a0fd)
+- [tab-cutter](https://github.com/soags/tab-cutter) 
+  - 現在のタブからウィンドウを2つに分割するChrome拡張機能
+  - 使用技術: TypeScript
+  - [Chrome Web ストア](https://chromewebstore.google.com/detail/tab-cutter/mekmindbhhjinkmgdjabpgfkaekhmgkj)
+- [temp-dir-cli](https://github.com/soags/temp-dir-cli)
+  - とりあえずファイル置き場として、一時フォルダを作成して開く`tempdir`コマンド
+  - 使用技術: TypeScript
+- [aspnet-oidc-hybrid](https://github.com/soags/aspnet-oidc-hybrid)
+  - 既存の認証をもつASP.NETプロジェクトに、OpenID Connect を後付けで追加する方法についての検証プロジェクト
+  - 使用技術: C#, ASP.NET Core, OpenID Connect
+- [resume](https://zenn.dev/soags/resume)
+  - 職務経歴書のWebサイト
+  - 使用技術: Nextra
 
 ## OSS貢献
 

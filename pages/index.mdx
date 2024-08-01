@@ -1,3 +1,6 @@
+import { Shield, ShieldLink } from '../components/shield'
+import { PortfolioCard } from '../components/portfolio-card'
+
 # 職務経歴書
 
 ## 基本情報
@@ -22,7 +25,7 @@
 - 要件定義から保守まで一貫して担当している経験
 - 5 名程度のチームでのプロジェクトマネジメント
 - 要件定義、仕様説明、提案などの対顧客コミュニケーション
-- 要件を実現するためのアーキテクト設計
+- システム全体のアーキテクト設計
 - 拡張性、パフォーマンス、分かりやすさを考慮したデータベース設計
 - TypeScript、 React、 Vue.js、 jQuery でのフロントエンドの設計・開発
 - C#、 PHP でのバックエンドの設計・開発
@@ -33,7 +36,7 @@
 
 ## 技術スタック
 
-<div className="bg-red-500">
+<div className="grid grid-col grid-cols-2 gap-4">
 
 <div>
 
@@ -73,9 +76,8 @@
 ## 意欲・考え
 
 - 一人で黙々と作業をするよりも、チームと協力して仕事をするのが好き
-- 最終的にやりたいことに対して、どのように実現するかを考えることが好き
-  - お客様の言う「ほしい機能」と実際に必要な機能は異なることがあり、すり合わせが大事だと考えている
-- どのようなデータ構造にすると綺麗にデータを管理できるかを考えることが好き
+- ユーザーが最終的にやりたいことに対して、どのように実現するかを考えることが好き  
+- どのようなデータ構造にすると、綺麗にデータを管理できるかを考えることが好き
 - 面倒なことに対しては「本当に必要か」、「自動化できるか」の順にアプローチを行う
 - メンバーが自走力を持てるように、考え方や調べ方などを重点的に伝えるよう心がけている
 
@@ -84,17 +86,27 @@
 - 勤務地: 愛知県
 - 勤務形態: 出社 or リモートワーク
 
+## 学歴
+
+名城大学 理工学部 情報工学科 卒
+
+## 資格・免許
+
+- 応用情報技術者 (2020年12月)
+- 大型自動二輪車免許 (2014年11月)
+- 普通自動車免許 (2012年3月)
+
 ## 職務経歴詳細
 
 ### S株式会社 (2016/04 - 現在)
 
 #### 役職・業務内容
 
-- リードエンジニア
-  - 各機能の設計・開発・テスト
 - チームリーダー:
   - チームメンバーのプロジェクトアサイン
   - 売上目標に向けたプリセールス活動
+- リードエンジニア
+  - 各機能の設計・開発・テスト
 - プロジェクトマネージャー:
   - プロジェクト全体の進捗管理・品質管理
   - プロジェクトメンバーへの指示・フォロー
@@ -116,16 +128,16 @@
 - 使用技術
   - Vue.js / Electron / C# / SQL Server / IBM i / Windows Server / MotionBoard
 - 実現したこと
-  - Web + Electron のハイブリッドアプリ
-  - RFID の読取
-  - かんばんの QR コード読取 (複数フォーマット対応)
-  - オフラインで失敗したリクエストのリトライ
+  - Vue.jsを使用したSPA + SPAを参照するElectron のハイブリッドアプリケーション
+  - RFID の読み取りに対応
+  - かんばんの QR コード読み取りに対応 (複数フォーマットかつフォーマットの自動判定に対応)
+  - オフライン時のリクエストの自動リトライに対応
     - Electron が BackgroundSync に対応していなかったため、スクラッチでリトライ処理を実装
     - リトライリクエストの HTTP ヘッダーを使用して、「オフラインだった時間」を補正する機能を実装
 
 #### 大手製造業向け原価企画システム開発
 
-プレス・溶接・調達・輸送・型など製品の製造にどの程度の原価がかかっているかを集計・分析する原価企画システムを開発しました。
+プレス・溶接・調達・輸送・型など製品の製造原価を集計・分析するシステムを開発しました。
 
 - プロジェクト規模:
   - 2~5 人チームでのウォータフォール開発 (15 人月)
@@ -135,10 +147,9 @@
 - 使用技術
   - VB.NET / Oracle / Windows Server
 - 実現したこと
-  - 原価計算・積上計算を自動で行い原価明細を自動で作成
-  - ERP システム、PDM システムから各種情報の自動連携
-  - プレス・溶接・調達・輸送・型など原価計算に用いる根拠情報の Excel 取込
-  - 原価計算条件を変更したシミュレーション計算
+  - ERP システム、PDM システムとの各種情報の自動連携に対応
+  - 原価計算に用いる根拠情報の Excel 取込に対応
+  - 原価計算条件を変更したシミュレーション計算が可能
 
 #### 人事総務ポータルサイト開発
 
@@ -151,16 +162,16 @@
   - リードエンジニア
   - ブリッジ (海外子会社のメンバーに指示)
 - 使用技術
-  - Vue.js / Laravel / IBM i / Windows Server
+  - Vue.js / Laravel / Redis / IBM i / Windows Server
 - 実現したこと
   - PHP できるようになった
     - PHP を触ったことがなく、社内でも PHP の実績はなかったが、勉強してプロジェクトを完遂
-  - 1 万人に対する給与明細発行通知のメール配信
-  - スマホカメラで証明書類・顔写真の撮影 (WebRTC + SVG)
+  - 1 万人に対する給与明細発行通知のメール配信が可能 (Redisをキューとして使ったスクラッチ開発)
+  - スマホカメラで証明書類・顔写真の撮影が可能 (WebRTC + SVG)
 
-#### 標的型攻撃ペネトレーションテストツール開発
+#### 標的型攻撃メール訓練ツール
 
-標的型攻撃メールを実際に送信してメールを開いた人を特定・集計し注意喚起を行うシステムの開発しました。
+標的型攻撃メールを実際に送信してメールを開いた人を特定・集計し注意喚起を行うシステムを開発しました。
 
 - プロジェクト規模:
   - 1 人
@@ -169,12 +180,12 @@
 - 使用技術
   - Vue.js / C# / PostgreSQL / Windows Server
 - 実現したこと
-  - 送信元を偽装した標的型攻撃メールを送信する
-  - 任意で送信元や件名、本文などを変更できる
-  - メール内のリンクにトラップを仕込み、リンクを開いた人を特定する
-  - 添付された Excel ファイルにトラップを仕込み、ファイルを開いた人を特定する
-  - 添付された Word ファイルにトラップを仕込み、ファイルを開いた人を特定する
-  - 添付された PDF ファイルにトラップを仕込み、ファイルを開いた人を特定する
+  - 送信元を偽装した標的型攻撃メールの送信が可能
+  - ユーザーが任意で送信元や件名、本文などを変更可能
+  - メール内のリンクにトラップを仕込み、リンクを開いた人を特定・集計することが可能
+  - 添付された Excel ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能
+  - 添付された Word ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能
+  - 添付された PDF ファイルにトラップを仕込み、ファイルを開いた人を特定・集計することが可能
 
 #### 社内工数入力システム再構築の開発基盤構築
 
@@ -182,43 +193,206 @@
 
 - 使用技術
   - Vue.js / C# / Docker / AWS Fargate / AWS RDS
-- 考えたこと
-  - コンテナ OS を Linux にする
-    - 社内での開発は 90%以上が Windows ですが、あえて Linux コンテナを採用した
-    - 初心者のメンバーがドツボにはまるリスクと Linux を勉強してもらうコストを考慮し、より一般的で調べやすいことを優先した
-  - VB.NET から C# への移行
-    - VB.NET の機能追加終了アナウンスをネタに、今後新規で採用するメリットは少ないという建付けで、全社的な VB.NET 脱却を提案した
-    - 社内では主に VB.NET が使用されているため、同じライブラリを使用でき移行コストの低い C#を提案した
-
-## 学歴
-
-名城大学 理工学部 情報工学科 卒
-
-## 資格・免許
-
-- 応用情報技術者 (2020年12月)
-- 大型自動二輪車免許 (2014年11月)
-- 普通自動車免許 (2012年3月)
+- 実現したこと
+  - コンテナ開発を試験的に導入
+  - 全社的なVB.NET から C# への移行を開始
+  - Vue.jsを使用したSPA開発を提案
 
 ## 個人開発
 
-- [zenn-create](https://github.com/soags/zenn-create)
-  - Zenn CLI のnew:article、new:bookの動作を改良する非公式のCLIツール
-  - 使用技術: TypeScript
-  - 記事: [Zenn CLI のSlug 動作を改良するCLIを作った](https://zenn.dev/soags/articles/zenn-create-96644c4bc7a0fd)
-- [tab-cutter](https://github.com/soags/tab-cutter) 
-  - 現在のタブからウィンドウを2つに分割するChrome拡張機能
-  - 使用技術: TypeScript
-  - [Chrome Web ストア](https://chromewebstore.google.com/detail/tab-cutter/mekmindbhhjinkmgdjabpgfkaekhmgkj)
-- [temp-dir-cli](https://github.com/soags/temp-dir-cli)
-  - とりあえずファイル置き場として、一時フォルダを作成して開く`tempdir`コマンド
-  - 使用技術: TypeScript
-- [aspnet-oidc-hybrid](https://github.com/soags/aspnet-oidc-hybrid)
-  - 既存の認証をもつASP.NETプロジェクトに、OpenID Connect を後付けで追加する方法についての検証プロジェクト
-  - 使用技術: C#, ASP.NET Core, OpenID Connect
-- [resume](https://zenn.dev/soags/resume)
-  - 職務経歴書のWebサイト
-  - 使用技術: Nextra
+<div className="mt-4 grid grid-col gap-4 md:grid-cols-2">
+
+<PortfolioCard
+  href="https://github.com/soags/zenn-create"
+  title="zenn-create"
+  description="Zenn CLI の記事作成周りの動作を改良する非公式のCLIツール"
+  links={[
+    {
+      href:"https://github.com/soags/zenn-create",
+      alt:"GitHub",
+      badgeContent:"GitHub-%2312100E",
+      logo:"github",
+      logoColor:"white"
+    },
+    {
+      href:"https://www.npmjs.com/package/zenn-create",
+      alt:"npm",
+      badgeContent:"npm-CB3837",
+      logo:"npm",
+      logoColor:"white"
+    },
+    {
+      href:"https://zenn.dev/soags/articles/zenn-create-96644c4bc7a0fd",
+      alt:"Zenn",
+      badgeContent:"Zenn-3EA8FF",
+      logo:"zenn",
+      logoColor:"white"
+    }
+  ]}
+  techs={[
+    {
+      alt:"TypeScript",
+      badgeContent:"TypeScript-3178C6",
+      logo:"typescript",
+      logoColor:"white"
+    }
+  ]}
+/>
+
+<PortfolioCard
+  href="https://github.com/soags/tab-cutter"
+  title="tab-cutter"
+  description="現在のタブからウィンドウを2つに分割するChrome拡張機能"
+  links={[
+    {
+      href:"https://github.com/soags/tab-cutter",
+      alt:"GitHub",
+      badgeContent:"GitHub-%2312100E",
+      logo:"github",
+      logoColor:"white"
+    },
+    {
+      href:"https://chromewebstore.google.com/detail/tab-cutter/mekmindbhhjinkmgdjabpgfkaekhmgkj",
+      alt:"Chrome Web Store",
+      badgeContent:"Chrome_Web_Store-4285F4",
+      logo:"googlechrome",
+      logoColor:"white"        
+    }
+  ]}
+  techs={[
+    {
+      alt:"TypeScript",
+      badgeContent:"TypeScript-3178C6",
+      logo:"typescript",
+      logoColor:"white"
+    }
+  ]}
+/>
+
+<PortfolioCard
+  href="https://github.com/soags/temp-dir-cli"
+  title="temp-dir-cli"
+  description="一時的なファイル置き場として1コマンドでフォルダを作成して開くCLIツール"
+  links={[
+    {
+      href:"https://github.com/soags/temp-dir-cli",
+      alt:"GitHub",
+      badgeContent:"GitHub-%2312100E",
+      logo:"github",
+      logoColor:"white"
+    },
+    {
+      href:"https://www.npmjs.com/package/temp-dir-cli",
+      alt:"npm",
+      badgeContent:"npm-CB3837",
+      logo:"npm",
+      logoColor:"white"
+    }
+  ]}
+  techs={[
+    {
+      alt:"TypeScript",
+      badgeContent:"TypeScript-3178C6",
+      logo:"typescript",
+      logoColor:"white"
+    }
+  ]}
+/>
+
+<PortfolioCard
+  href="https://github.com/soags/whisper-docker"
+  title="whisper-docker"
+  description="Dockerコンテナ上でOpenAI Whisperを実行し、複数の音声ファイルの文字起こしを行うプロジェクト"
+  links={[
+    {
+      href:"https://github.com/soags/whisper-docker",
+      alt:"GitHub",
+      badgeContent:"GitHub-%2312100E",
+      logo:"github",
+      logoColor:"white"
+    },
+  ]}
+  techs={[
+    {
+      alt:"Python",
+      badgeContent:"Python-3776AB",
+      logo:"python",
+      logoColor:"white"
+    },
+    {
+      alt:"OpenAI",
+      badgeContent:"OpenAI-412991",
+      logo:"openai",
+      logoColor:"white"
+    },
+    {
+      alt:"Docker",
+      badgeContent:"Docker-2496ED",
+      logo:"docker",
+      logoColor:"white"
+    }
+  ]}
+/>
+
+<PortfolioCard
+  href="https://github.com/soags/aspnet-oidc-hybrid"
+  title="aspnet-oidc-hybrid"
+  description="既存の認証をもつASP.NETプロジェクトに、OpenID Connect を後付けで追加する方法についての検証プロジェクト"
+  links={[
+    {
+      href:"https://github.com/soags/aspnet-oidc-hybrid",
+      alt:"GitHub",
+      badgeContent:"GitHub-%2312100E",
+      logo:"github",
+      logoColor:"white"
+    },
+  ]}
+  techs={[
+    {
+      alt:"C#",
+      badgeContent:"C%23-512BD4",
+      logo:"",
+      logoColor:"white"
+    },
+    {
+      alt:"ASP.NET Core",
+      badgeContent:"ASP.NET_Core-512BD4",
+      logo:"",
+      logoColor:"white"
+    }
+  ]}
+/>
+
+<PortfolioCard
+  href="https://github.com/soags/resume"
+  title="Resume"
+  description="職務経歴書のWebサイト"
+  links={[
+    {
+      href:"https://github.com/soags/resume",
+      alt:"GitHub",
+      badgeContent:"GitHub-%2312100E",
+      logo:"github",
+      logoColor:"white"
+    },
+  ]}
+  techs={[
+    {
+      alt:"Nextra",
+      badgeContent:"Nextra-000000",
+      logo:"nextra",
+      logoColor:"white"
+    },
+    {
+      alt:"Next.js",
+      badgeContent:"Next.js-000000",
+      logo:"nextdotjs",
+      logoColor:"white"
+    },
+  ]}
+/>
+
+</div>
 
 ## OSS貢献
 

@@ -13,14 +13,10 @@ export default {
     backToTop: true
   },
   editLink: {
-    component: false
+    component: null
   },
   feedback: {
     content	: null
-  },
-  navigation: {
-    prev: true,
-    next: true
   },
   gitTimestamp: () => '最終更新日 2024年8月1日',
   footer: {

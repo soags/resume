@@ -1,7 +1,9 @@
 export default {
-  logo: <span>My Nextra Documentation</span>,
+  logo: <span>Resume</span>, 
   project: {
-    link: 'https://github.com/shuding/nextra'
-  }
-  // ... other theme options
+    link: 'https://github.com/soags/resume'
+  },
+  search: false,  
+  darkMode: false,  
+  sidebar: false
 }

@@ -17,11 +17,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Install, Build, and Upload
         uses: withastro/action@v1
         with:
           node-version: 20
+          package-manager: pnpm@latest
 
   deploy:
     needs: build

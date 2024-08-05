@@ -18,7 +18,7 @@ export default {
   feedback: {
     content	: null
   },
-  gitTimestamp: () => '最終更新日 2024年8月1日',
+  gitTimestamp: () => '最終更新日 2024年8月5日',
   footer: {
     component: null
   }

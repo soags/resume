@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sl-content-width: 50rem;
+  --sl-text-h1: 1.75rem; 
+  --sl-text-h2: 1.5rem; 
+  --sl-text-h3: 1.17rem; 
+  --sl-text-h4: 1.1rem; 
+  --sl-text-h4: 0.83rem;
+}

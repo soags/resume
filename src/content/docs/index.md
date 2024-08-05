@@ -35,19 +35,19 @@ lastUpdated: 2024-08-06
 
 ### 業務利用
 
-<div>
-  <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
-  <img alt="Electron" src="https://img.shields.io/badge/Electron-47848F?&style=flat&logo=electron&logoColor=white" />
-  <img alt="jQuery" src="https://img.shields.io/badge/jQuery-0769AD?&style=flat&logo=jquery&logoColor=white" />
-  <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3?&style=flat&logo=bootstrap&logoColor=white" />
-  <img alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
-  <img alt="Laravel" src="https://img.shields.io/badge/Laravel-FF2D20?&style=flat&logo=laravel&logoColor=white" />
-  <img alt="SQL" src="https://img.shields.io/badge/SQL-000000?&style=flat&logo=sql&logoColor=white" />
-  <img alt="VB.NET" src="https://img.shields.io/badge/VB.NET-512BD4?&style=flat" />
-  <img alt="SQL_Server" src="https://img.shields.io/badge/SQL_Server-512BD4?&style=flat" />
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?&style=flat&logo=postgresql&logoColor=white" />
-  <img alt="Oracle" src="https://img.shields.io/badge/Oracle-F80000?&style=flat&logo=oracle&logoColor=white" />
-  <img alt="Windows_Server" src="https://img.shields.io/badge/Windows_Server-512BD4?&style=flat" />  
+<div class="flex flex-wrap gap-2 p-2 items-center">
+  <img class="m-0" alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
+  <img class="m-0" alt="Electron" src="https://img.shields.io/badge/Electron-47848F?&style=flat&logo=electron&logoColor=white" />
+  <img class="m-0" alt="jQuery" src="https://img.shields.io/badge/jQuery-0769AD?&style=flat&logo=jquery&logoColor=white" />
+  <img class="m-0" alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3?&style=flat&logo=bootstrap&logoColor=white" />
+  <img class="m-0" alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
+  <img class="m-0" alt="Laravel" src="https://img.shields.io/badge/Laravel-FF2D20?&style=flat&logo=laravel&logoColor=white" />
+  <img class="m-0" alt="SQL" src="https://img.shields.io/badge/SQL-000000?&style=flat&logo=sql&logoColor=white" />
+  <img class="m-0" alt="VB.NET" src="https://img.shields.io/badge/VB.NET-512BD4?&style=flat" />
+  <img class="m-0" alt="SQL_Server" src="https://img.shields.io/badge/SQL_Server-512BD4?&style=flat" />
+  <img class="m-0" alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?&style=flat&logo=postgresql&logoColor=white" />
+  <img class="m-0" alt="Oracle" src="https://img.shields.io/badge/Oracle-F80000?&style=flat&logo=oracle&logoColor=white" />
+  <img class="m-0" alt="Windows_Server" src="https://img.shields.io/badge/Windows_Server-512BD4?&style=flat" />  
 </div>
 
 ### 趣味

@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:pdf": "md-to-pdf src/content/docs/index.md --config-file ./pdf-configs/config.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.1",
@@ -15,6 +16,7 @@
     "@astrojs/starlight-tailwind": "^2.0.3",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.10.2",
+    "md-to-pdf": "^5.2.4",
     "sharp": "^0.32.5",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"

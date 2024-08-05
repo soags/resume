@@ -260,7 +260,7 @@ Docker コンテナ上で OpenAI Whisper を実行し、複数の音声ファイ
 - [dotnet/MobileBlazorBindings](https://github.com/dotnet/MobileBlazorBindings/issues?q=author%3Asoags)
 - [shadcn-ui/ui](https://github.com/shadcn-ui/ui/issues?q=commenter%3Asoags)
   
-## 執筆活動
-
+## 執筆活動 
+ 
 - [Zenn](https://zenn.dev/soags)
 

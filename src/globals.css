@@ -4,9 +4,13 @@
 
 :root {
   --sl-content-width: 50rem;
-  --sl-text-h1: 1.75rem; 
-  --sl-text-h2: 1.5rem; 
-  --sl-text-h3: 1.17rem; 
-  --sl-text-h4: 1.1rem; 
-  --sl-text-h4: 0.83rem;
+  --sl-text-h1: 1.5rem; 
+  --sl-text-h2: 1.25rem; 
+  --sl-text-h3: 1.125rem; 
+  --sl-text-h4: 1.0625rem; 
+  --sl-text-h5: 1rem;
+}
+
+.sl-markdown-content img {
+  margin-top: 0 !important;
 }

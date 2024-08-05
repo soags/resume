@@ -7,6 +7,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "職務経歴書",
+			defaultLocale: "ja",
       customCss: ["./src/globals.css"],
       social: {
         github: "https://github.com/soags",
@@ -22,7 +23,7 @@ export default defineConfig({
           ],
         },
       ],
-			pagefind: false
+			pagefind: false,			
     }),
     tailwind({
       applyBaseStyles: false,

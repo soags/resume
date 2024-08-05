@@ -35,24 +35,24 @@ lastUpdated: 2024-08-06
 
 ### 業務利用
 
-<div class="flex flex-wrap gap-2 p-2 items-center">
-  <img class="m-0" alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
-  <img class="m-0" alt="Electron" src="https://img.shields.io/badge/Electron-47848F?&style=flat&logo=electron&logoColor=white" />
-  <img class="m-0" alt="jQuery" src="https://img.shields.io/badge/jQuery-0769AD?&style=flat&logo=jquery&logoColor=white" />
-  <img class="m-0" alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3?&style=flat&logo=bootstrap&logoColor=white" />
-  <img class="m-0" alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
-  <img class="m-0" alt="Laravel" src="https://img.shields.io/badge/Laravel-FF2D20?&style=flat&logo=laravel&logoColor=white" />
-  <img class="m-0" alt="SQL" src="https://img.shields.io/badge/SQL-000000?&style=flat&logo=sql&logoColor=white" />
-  <img class="m-0" alt="VB.NET" src="https://img.shields.io/badge/VB.NET-512BD4?&style=flat" />
-  <img class="m-0" alt="SQL_Server" src="https://img.shields.io/badge/SQL_Server-512BD4?&style=flat" />
-  <img class="m-0" alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?&style=flat&logo=postgresql&logoColor=white" />
-  <img class="m-0" alt="Oracle" src="https://img.shields.io/badge/Oracle-F80000?&style=flat&logo=oracle&logoColor=white" />
-  <img class="m-0" alt="Windows_Server" src="https://img.shields.io/badge/Windows_Server-512BD4?&style=flat" />  
+<div class="flex flex-wrap gap-2 p-2">
+  <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
+  <img alt="Electron" src="https://img.shields.io/badge/Electron-47848F?&style=flat&logo=electron&logoColor=white" />
+  <img alt="jQuery" src="https://img.shields.io/badge/jQuery-0769AD?&style=flat&logo=jquery&logoColor=white" />
+  <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3?&style=flat&logo=bootstrap&logoColor=white" />
+  <img alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
+  <img alt="Laravel" src="https://img.shields.io/badge/Laravel-FF2D20?&style=flat&logo=laravel&logoColor=white" />
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-000000?&style=flat&logo=sql&logoColor=white" />
+  <img alt="VB.NET" src="https://img.shields.io/badge/VB.NET-512BD4?&style=flat" />
+  <img alt="SQL_Server" src="https://img.shields.io/badge/SQL_Server-512BD4?&style=flat" />
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?&style=flat&logo=postgresql&logoColor=white" />
+  <img alt="Oracle" src="https://img.shields.io/badge/Oracle-F80000?&style=flat&logo=oracle&logoColor=white" />
+  <img alt="Windows_Server" src="https://img.shields.io/badge/Windows_Server-512BD4?&style=flat" />  
 </div>
 
 ### 趣味
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="React" src="https://img.shields.io/badge/React-61DAFB?&style=flat&logo=react&logoColor=white" />
   <img alt="Remix" src="https://img.shields.io/badge/Remix-000000?&style=flat&logo=remix&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?&style=flat&logo=nextdotjs&logoColor=white" />  
@@ -102,7 +102,7 @@ lastUpdated: 2024-08-06
 - チーム: 2~4 人
 - 役割: リードエンジニア / プロジェクトマネージャー
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
   <img alt="Electron" src="https://img.shields.io/badge/Electron-47848F?&style=flat&logo=electron&logoColor=white" />
   <img alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
@@ -127,7 +127,7 @@ lastUpdated: 2024-08-06
 - チーム: 2~5 人
 - 役割: リードエンジニア / プロジェクトマネージャー
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="VB.NET" src="https://img.shields.io/badge/VB.NET-512BD4?&style=flat&logo=dotnet&logoColor=white" />
   <img alt="SQL" src="https://img.shields.io/badge/SQL-000000?&style=flat&logo=sql&logoColor=white" />
  <img alt="Oracle" src="https://img.shields.io/badge/Oracle-F80000?&style=flat&logo=oracle&logoColor=white" />
@@ -147,7 +147,7 @@ lastUpdated: 2024-08-06
 - チーム: 2~4 人
 - 役割: リードエンジニア / ブリッジ (海外子会社のメンバーに指示)
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
   <img alt="jQuery" src="https://img.shields.io/badge/jQuery-0769AD?&style=flat&logo=jquery&logoColor=white" />
   <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3?&style=flat&logo=bootstrap&logoColor=white" />  
@@ -172,7 +172,7 @@ lastUpdated: 2024-08-06
 - チーム: 1 人
 - 役割: 全て
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
   <img alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?&style=flat&logo=postgresql&logoColor=white" />
@@ -192,7 +192,7 @@ lastUpdated: 2024-08-06
 
 社内システムの再構築にあたって、技術選定・開発基盤構築・技術サポートを担当しました。
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-4FC08D?&style=flat&logo=vuedotjs&logoColor=white" />
   <img alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
   <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?&style=flat&logo=docker&logoColor=white" />
@@ -214,7 +214,7 @@ lastUpdated: 2024-08-06
 Zenn CLI の記事作成周りの動作を改良する非公式の CLI ツール。
 [Zenn](https://zenn.dev/soags/articles/zenn-create-96644c4bc7a0fd)と[npm](https://www.npmjs.com/package/zenn-create)にて公開中。
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?&style=flat&logo=typescript&logoColor=white" />
 </div>
 
@@ -223,7 +223,7 @@ Zenn CLI の記事作成周りの動作を改良する非公式の CLI ツール
 現在のタブからウィンドウを 2 つに分割する Chrome 拡張機能。
 [Chrome Web Store](https://chromewebstore.google.com/detail/tab-cutter/mekmindbhhjinkmgdjabpgfkaekhmgkj)にて公開中。
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?&style=flat&logo=typescript&logoColor=white" />  
 </div>
 
@@ -232,7 +232,7 @@ Zenn CLI の記事作成周りの動作を改良する非公式の CLI ツール
 一時的なファイル置き場として 1 コマンドでフォルダを作成して開く CLI ツール。
 [npm](https://www.npmjs.com/package/zenn-create)にて公開中。
 
-<div>
+<div class="flex flex-wrap gap-2 p-2"> 
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?&style=flat&logo=typescript&logoColor=white" />  
 </div>
 
@@ -240,7 +240,7 @@ Zenn CLI の記事作成周りの動作を改良する非公式の CLI ツール
 
 Docker コンテナ上で OpenAI Whisper を実行し、複数の音声ファイルの文字起こしを行うプロジェクト。
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?&style=flat&logo=python&logoColor=white" />  
   <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991?&style=flat&logo=openai&logoColor=white" />  
   <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?&style=flat&logo=docker&logoColor=white" />  
@@ -250,7 +250,7 @@ Docker コンテナ上で OpenAI Whisper を実行し、複数の音声ファイ
 
 既存の認証をもつ ASP.NET プロジェクトに、OpenID Connect を後付けで追加する方法についての検証プロジェクト。
 
-<div>
+<div class="flex flex-wrap gap-2 p-2">
   <img alt="CSharp" src="https://img.shields.io/badge/C%23-512BD4?&style=flat&logo=dotnet&logoColor=white" />
   <img alt="ASP.NET Core" src="https://img.shields.io/badge/ASP.NET_Core-512BD4?&style=flat&logo=dotnet&logoColor=white" />
 </div>

@@ -4,6 +4,9 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://soags.github.io',
+	base: '/resume',
+
   integrations: [
     starlight({
       title: "職務経歴書",

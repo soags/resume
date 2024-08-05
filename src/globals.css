@@ -15,30 +15,18 @@
   margin-top: 0 !important;
 }
 
-*  {
-  @apply print:hidden;
-}
-
 @page {
   margin: 10mm;
   size: 210mm 297mm; /* A4縦サイズの場合 */
 }
 
 @media print {
-  /* 全体設定 */
-  body {
-    -webkit-print-color-adjust: exact; /* 印刷時でも背景色や背景画像を表示 */
-    width: 1190px; /* 印刷時の全ページ幅を統一（px数値はお好みで） */
-    zoom: 0.8; /* なるべく多くのブラウザで切れないようにするため */
+  div.page header.header,
+  div.page nav.sidebar,
+  div.page aside.right-sidebar-container {
+    display: none;
   }
-  /* 改ページをいれる場合 */
-  section {
-    page-break-before: always; /* 各セクションで改ページが行われるようにしています */
-  }
-  section + section.new-none:not(:root) {
-    page-break-before: avoid; /* 特定のセクションでは改ページを入れない場合の指定 */
-  }
-  .new-page {
-    page-break-before: always; /* 特定の場所で改ページを入れたいときの指定 */
+  div.page div.main-frame {
+    padding: 0;
   }
 }

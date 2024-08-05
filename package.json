@@ -1,19 +1,12 @@
 {
 	"scripts": {
-		"dev": "next",
-		"build": "next build",
-		"start": "next start"
-	},
-	"dependencies": {
-		"next": "^14.2.5",
-		"nextra": "^2.13.4",
-		"nextra-theme-docs": "^2.13.4",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
+		"lint": "markdownlint-cli2 RESUME.md & textlint RESUME.md"
 	},
 	"devDependencies": {
-		"autoprefixer": "^10.4.19",
-		"postcss": "^8.4.40",
-		"tailwindcss": "^3.4.7"
+		"markdownlint-cli2": "^0.13.0",
+		"textlint": "^14.0.4",
+		"textlint-filter-rule-allowlist": "^4.0.0",
+		"textlint-rule-preset-ja-spacing": "^2.4.3",
+		"textlint-rule-preset-ja-technical-writing": "^10.0.1"
 	}
 }

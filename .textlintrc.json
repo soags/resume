@@ -1,0 +1,21 @@
+{
+  "plugins": {},
+  "filters": {
+    "allowlist": {
+      "allow": ["名城大学 理工学部 情報工学科 卒"]
+    }
+  },
+  "rules": {
+    "preset-ja-technical-writing": {
+      "max-comma": false,
+      "max-kanji-continuous-len": {
+        "max": 10
+      }
+    },
+    "preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": {
+        "space": "always"
+      }
+    }
+  }
+}

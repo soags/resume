@@ -237,7 +237,8 @@ Zenn CLI の記事作成周りの動作を改良する非公式の CLI ツール
 Docker コンテナ上で OpenAI Whisper を実行し、複数の音声ファイルの文字起こしを行うプロジェクト。
 
 <div>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?&style=flat&logo=python&logoColor=white" />  
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?&style=flat&
+  logo=python&logoColor=white" />  
   <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991?&style=flat&logo=openai&logoColor=white" />  
   <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?&style=flat&logo=docker&logoColor=white" />  
 </div>

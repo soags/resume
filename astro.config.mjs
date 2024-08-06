@@ -11,7 +11,13 @@ export default defineConfig({
     starlight({
       title: "職務経歴書",
 			defaultLocale: "ja",
-      customCss: ["./src/globals.css"],
+      customCss: [
+        "@fontsource/noto-sans-jp/400.css",
+        "@fontsource/noto-sans-jp/500.css",
+        "@fontsource/noto-sans-jp/600.css",
+        "@fontsource/noto-sans-jp/700.css",
+        "./src/globals.css"
+      ],
       social: {
         github: "https://github.com/soags",
       },		

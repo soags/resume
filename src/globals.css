@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 :root {
+  --sl-font: 'Noto Sans JP', sans-serif;
+  --sl-nav-height: 3rem;
   --sl-content-width: 50rem;
   --sl-text-h1: 1.5rem; 
   --sl-text-h2: 1.25rem; 
   --sl-text-h3: 1.125rem; 
-  --sl-text-h4: 1.0625rem; 
+  --sl-text-h4: 1rem; 
   --sl-text-h5: 1rem;
 }
 
@@ -15,18 +17,33 @@
   margin-top: 0 !important;
 }
 
-@page {
-  margin: 10mm;
-  size: 210mm 297mm; /* A4縦サイズの場合 */
+.page footer .meta {
+  margin-top: 0 !important;
 }
 
 @media print {
-  div.page header.header,
-  div.page nav.sidebar,
-  div.page aside.right-sidebar-container {
+  .page .header,
+  .page .sidebar,
+  .page .right-sidebar-container {
     display: none;
   }
-  div.page div.main-frame {
+
+  .page .main-frame {
     padding: 0;
+  }
+
+  .page .main-pane {
+    width: 100% !important;
+    margin: auto 0 !important;
+    --sl-content-margin-inline: auto !important;
+  }
+  
+  .page-break {
+    page-break-before: always;
+  }
+
+  @page {
+    margin: 10mm;
+    size: 210mm 297mm; /* A4 */
   }
 }

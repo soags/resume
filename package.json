@@ -8,13 +8,14 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "build:pdf": "md-to-pdf src/content/docs/index.md --config-file ./pdf-configs/config.js"
+    "build:pdf": "node build-pdf.cjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.1",
     "@astrojs/starlight": "^0.25.3",
     "@astrojs/starlight-tailwind": "^2.0.3",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/noto-sans-jp": "^5.0.19",
     "astro": "^4.10.2",
     "md-to-pdf": "^5.2.4",
     "sharp": "^0.32.5",

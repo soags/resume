@@ -29,6 +29,9 @@ importers:
       md-to-pdf:
         specifier: ^5.2.4
         version: 5.2.4(typescript@5.5.4)
+      puppeteer:
+        specifier: ^22.15.0
+        version: 22.15.0(typescript@5.5.4)
       sharp:
         specifier: ^0.32.5
         version: 0.32.6

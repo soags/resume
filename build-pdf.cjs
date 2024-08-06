@@ -8,8 +8,12 @@ const puppeteer = require('puppeteer');
 
   await page.goto('https://soags.github.io/resume/');
 
+  if (!fs.existsSync('./dist')){
+    fs.mkdirSync('./dist');
+  }
+
   await page.pdf({
-    path: 'dist/resume.pdf',
+    path: './dist/resume.pdf',
     format: 'A4',
   });
 

@@ -1,14 +1,14 @@
 ---
 title: 職務経歴書
 description: soagsの職務経歴書
-lastUpdated: 2024-08-06
 ---
 
 ## 基本情報
 
 - 氏名: 曽我周平 (Soga Shuhei)
 - 居住地: 愛知県
-- URL: [https://github.com/soags](https://github.com/soags)
+- GitHub: [https://github.com/soags](https://github.com/soags)
+- Zenn: [https://zenn.dev/soags](https://zenn.dev/soags)
 
 ## 職務経歴
 
@@ -30,6 +30,8 @@ lastUpdated: 2024-08-06
 チームメンバーのアサイン管理・提案資料の作成・顧客への提案説明・ヒアリングなども行っております。
 
 趣味でトレンド技術を追っていることもあり、社内では技術的な相談に乗ったり、提案をしたりすることが多いです。
+
+<div class="page-break"></div>
 
 ## 技術スタック
 
@@ -83,6 +85,8 @@ lastUpdated: 2024-08-06
 - どのようなデータ構造にすると、綺麗にデータを管理できるかを考えることが好き
 - メンバーが自走力を持てるように、考え方や調べ方などを重点的に伝えるよう心がけている
 
+<div class="page-break"></div>
+
 ## 学歴
 
 名城大学 理工学部 情報工学科 (2012 年 4 月 ~ 2016 年 3 月)
@@ -119,6 +123,8 @@ lastUpdated: 2024-08-06
 - オフライン時のリクエストの自動リトライに対応
 - Electron が BackgroundSync に対応していなかったため、スクラッチでリトライ処理を実装
 - リトライリクエストの HTTP ヘッダーを使用して、「オフラインだった時間」を補正する機能を実装
+
+<div class="page-break"></div>
 
 ### 大手製造業向け原価企画システム開発
   
@@ -165,6 +171,8 @@ lastUpdated: 2024-08-06
 - 1 万人に対する給与明細発行通知のメール配信が可能 (Redis をキューとして使ったスクラッチ開発)
 - スマホカメラで証明書類・顔写真の撮影が可能 (WebRTC + SVG)
 
+<div class="page-break"></div>
+
 ### 標的型攻撃メール訓練ツール
 
 標的型攻撃メールを実際に送信してメールを開いた人を特定・集計し注意喚起を行うシステムを開発しました。
@@ -206,6 +214,8 @@ lastUpdated: 2024-08-06
 - コンテナ開発を試験的に導入
 - 全社的な VB.NET から C# への移行を開始
 - Vue.js を使用した SPA 開発を提案
+
+<div class="page-break"></div>
 
 ## 個人開発
 
@@ -259,8 +269,4 @@ Docker コンテナ上で OpenAI Whisper を実行し、複数の音声ファイ
 
 - [dotnet/MobileBlazorBindings](https://github.com/dotnet/MobileBlazorBindings/issues?q=author%3Asoags)
 - [shadcn-ui/ui](https://github.com/shadcn-ui/ui/issues?q=commenter%3Asoags)
-  
-## 執筆活動 
- 
-- [Zenn](https://zenn.dev/soags)
 

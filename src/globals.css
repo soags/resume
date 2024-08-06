@@ -17,11 +17,15 @@
   margin-top: 0 !important;
 }
 
-.page footer .meta {
-  margin-top: 0 !important;
+.page footer {
+  display: none;
 }
 
 @media print {
+  body {
+    font-size: 15px;
+  }
+
   .page .header,
   .page .sidebar,
   .page .right-sidebar-container {
@@ -37,13 +41,13 @@
     margin: auto 0 !important;
     --sl-content-margin-inline: auto !important;
   }
-  
+
   .page-break {
     page-break-before: always;
   }
 
   @page {
-    margin: 10mm;
+    /* margin: 10mm; */
     size: 210mm 297mm; /* A4 */
   }
 }

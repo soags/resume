@@ -14,7 +14,6 @@ type TechStack = {
   backend: string[];
   infrastructure: string[];
   tools: string[];
-  other: string[];
 }
 
 type Certification = {

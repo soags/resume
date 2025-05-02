@@ -17,30 +17,28 @@
     ],
     "backend": [
       "C#",
-      "ASP.NET Core Web API",
+      "ASP.NET Core",
       "PHP",
       "Laravel",      
       "VB.NET",      
       "Java",      
       "SQL",
       "PostgreSQL",
-      "Oracle Database",
-      "SQL Server"
+      "SQL Server",
+      "Oracle Database"
     ],
     "infrastructure": [
       "Windows Server",
       "Docker",
       "AWS Fargate"
     ],
-    "other": [      
-      "MotionBoard",
-      "i-Reporter",
-      "ColdFusion"
-    ],
     "tools": [
       "GitHub",
       "Redmine",
-      "Notion"
+      "Notion",
+      "MotionBoard",
+      "i-Reporter",
+      "ColdFusion"
     ]
   },
   "highlights": [

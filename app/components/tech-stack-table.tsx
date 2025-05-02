@@ -2,7 +2,7 @@ import type { TechStack } from "~/types/resume";
 import { Table, TableBody, TableCell, TableRow } from "./ui/table";
 
 function TechStackTable({ techStack }: { techStack: TechStack }) {
-  const { frontend, backend, infrastructure, other, tools } = techStack;
+  const { frontend, backend, infrastructure, tools } = techStack;
 
   return (
     <Table className="divide-y">
@@ -11,7 +11,6 @@ function TechStackTable({ techStack }: { techStack: TechStack }) {
         <TechStackTableRow title="バックエンド" items={backend} />
         <TechStackTableRow title="インフラ" items={infrastructure} />
         <TechStackTableRow title="ツール" items={tools} />
-        <TechStackTableRow title="その他" items={other} />
       </TableBody>
     </Table>
   );

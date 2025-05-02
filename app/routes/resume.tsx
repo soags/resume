@@ -28,7 +28,7 @@ export default function Resume() {
 
       <Section title="職務要約">
         <>
-        <p>
+          <p>
             2016年にS株式会社に入社し、製造業向けの業務システムの受託開発に従事。
           </p>
           <p>
@@ -36,7 +36,7 @@ export default function Resume() {
           </p>
           <p>
             また、プロジェクトマネージャーとしてプロジェクト全体をリードし、顧客折衝、進捗管理、アーキテクチャ設計や技術選定なども行っていました。
-        </p>
+          </p>
         </>
       </Section>
 
@@ -52,7 +52,7 @@ export default function Resume() {
         </ul>
       </Section>
 
-      <Section title="職務経歴">
+      <Section title="職務経歴" className="print:break-before-page">
         {resume.works.map((work) => (
           <WorkSection key={work.company} work={work} />
         ))}
@@ -117,7 +117,7 @@ export default function Resume() {
         <div className="space-y-2">
           <div className="flex items-center">
             <div className="w-40 font-medium pr-2">GitHub</div>
-          <div>
+            <div>
               <Link href="https://github.com/soags" target="_blank">
                 https://github.com/soags
               </Link>
@@ -125,7 +125,7 @@ export default function Resume() {
           </div>
           <div className="flex items-center">
             <div className="w-40 font-medium pr-2">Zenn</div>
-          <div>
+            <div>
               <Link href="https://zenn.dev/soags" target="_blank">
                 https://zenn.dev/soags
               </Link>
@@ -133,31 +133,31 @@ export default function Resume() {
           </div>
           <div className="flex items-center">
             <div className="w-40 font-medium pr-2">Chrome拡張機能</div>
-          <div>
-                <Link
-                  href="https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb"
-                  target="_blank"
-                >
+            <div>
+              <Link
+                href="https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb"
+                target="_blank"
+              >
                 Tab Cutter
-                </Link>
+              </Link>
             </div>
           </div>
           <div className="flex items-center">
             <div className="w-40 font-medium pr-2">npmパッケージ</div>
-          <div>
-                <Link
-                  href="https://www.npmjs.com/package/temp-dir-cli"
-                  target="_blank"
-                >
+            <div>
+              <Link
+                href="https://www.npmjs.com/package/temp-dir-cli"
+                target="_blank"
+              >
                 temp-dir-cli
-                </Link>
+              </Link>
               { " / " }
-                <Link
-                  href="https://www.npmjs.com/package/zenn-create"
-                  target="_blank"
-                >
+              <Link
+                href="https://www.npmjs.com/package/zenn-create"
+                target="_blank"
+              >
                 zenn-create
-                </Link>
+              </Link>
             </div>
           </div>
         </div>

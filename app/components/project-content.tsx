@@ -24,8 +24,8 @@ export function ProjectContent({ project }: { project: Project }) {
   const rolesText = roles.join(" / ");
 
   const techs = Object.entries(techStack)
-    .filter(([_, value]) => value.length > 0)
-    .map(([key, value]) => value)
+    .filter(([, value]) => value.length > 0)
+    .map(([, value]) => value)
     .flat();
 
   return (

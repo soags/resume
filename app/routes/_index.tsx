@@ -1,4 +1,4 @@
-import { Award, Calendar, GraduationCap, Badge as LucideBadge } from "lucide-react";
+import { Award, Calendar, GraduationCap } from "lucide-react";
 import resumeData from "~/data/resume.json";
 import type { Certification, Education, Resume } from "~/types/resume";
 import { TechStackContent } from "~/components/tech-stack-content";
@@ -68,7 +68,7 @@ export default function Resume() {
         {/* 職務経歴 */}
         <Section title="職務経歴">
           {resume.work.map((item) => (
-            <Paper>
+            <Paper key={item.company}>
               <WorkContent key={item.company} work={item} />
             </Paper>
           ))}
@@ -78,7 +78,7 @@ export default function Resume() {
         <Section title="自己PR">
           <Paper className="space-y-4">
             {resume.promotions.map((item) => (
-              <div>
+              <div key={item.title}>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <div className="text-gray-800 pl-2">
                   {item.description.split("\n").map((line, index) => (

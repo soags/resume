@@ -1,4 +1,4 @@
-import { Chrome, Github, Globe, Package, TerminalSquare } from "lucide-react";
+import { Github, Globe, TerminalSquare } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Link } from "./ui/link";
 import type { Basics, SideProject } from "~/types/resume";
@@ -35,7 +35,7 @@ export function SideProjectsContent({
       >
         <div className="space-y-4">
           {sideProjects.map((project) => (
-            <div className="pl-4 border-l-2 border-sky-900">
+            <div key={project.title} className="pl-4 border-l-2 border-sky-900">
               <p className="font-medium">{project.title}</p>
               <Link to={project.url} target="_blank" className="mb-1">
                 {project.url}

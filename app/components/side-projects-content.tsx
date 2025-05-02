@@ -1,84 +1,54 @@
-import { Chrome, Github, Globe, Package } from "lucide-react";
+import { Chrome, Github, Globe, Package, TerminalSquare } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Link } from "./ui/link";
+import type { Basics, SideProject } from "~/types/resume";
 
-export function SideProjectsContent() {
+export function SideProjectsContent({
+  basics,
+  sideProjects,
+}: {
+  basics: Basics;
+  sideProjects: SideProject[];
+}) {
   return (
     <div className="space-y-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* GitHub */}
         <SideProjectCard icon={<Github className="h-5 w-5" />} title="GitHub">
-          <Link to="https://github.com/soags" target="_blank">
-            https://github.com/soags
+          <Link to={basics.github} target="_blank">
+            {basics.github}
           </Link>
         </SideProjectCard>
 
         {/* Zenn */}
         <SideProjectCard icon={<Globe className="h-5 w-5" />} title="Zenn">
-          <Link to="https://zenn.dev/soags" target="_blank">
-            https://zenn.dev/soags
+          <Link to={basics.zenn} target="_blank">
+            {basics.zenn}
           </Link>
         </SideProjectCard>
       </div>
 
-      {/* Chrome拡張機能 */}
+      {/* 個人開発 */}
       <SideProjectCard
-        icon={<Chrome className="h-5 w-5" />}
-        title="Chrome拡張機能"
+        icon={<TerminalSquare className="h-5 w-5" />}
+        title="個人開発"
       >
-        <div className="pl-4 border-l-2 border-gray-200">
-          <p className="font-medium">Tab Cutter</p>
-          <Link
-            to="https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb"
-            target="_blank"
-          >
-            https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj
-          </Link>
-        </div>
-      </SideProjectCard>
-
-      {/* npmパッケージ */}
-      <SideProjectCard
-        icon={<Package className="h-5 w-5" />}
-        title="npmパッケージ"
-      >
-        <div className="space-y-3">
-          <div className="pl-4 border-l-2 border-gray-200">
-            <p className="font-medium">temp-dir-cli</p>
-            <Link
-              to="https://www.npmjs.com/package/temp-dir-cli"
-              target="_blank"
-            >
-              https://www.npmjs.com/package/temp-dir-cli
-            </Link>
-          </div>
-          <div className="pl-4 border-l-2 border-gray-200">
-            <p className="font-medium">zenn-create</p>
-            <Link
-              to="https://www.npmjs.com/package/zenn-create"
-              target="_blank"
-            >
-              https://www.npmjs.com/package/zenn-create
-            </Link>
-          </div>
-        </div>
-      </SideProjectCard>
-
-      {/* 職務経歴書ソースコード */}
-      {/* GitHub */}
-      <SideProjectCard
-        icon={<Github className="h-5 w-5" />}
-        title="職務経歴書ソースコード"
-      >
-        <Link to="https://github.com/soags/resume" target="_blank">
-          https://github.com/soags/resume
-        </Link>
-        <div className="flex flex-wrap gap-2 mt-3">
-          <Badge className="bg-sky-900 text-white">TypeScript</Badge>
-          <Badge className="bg-sky-900 text-white">React</Badge>
-          <Badge className="bg-sky-900 text-white">Remix (ReactRouter)</Badge>
-          <Badge className="bg-sky-900 text-white">Tailwind CSS</Badge>
-          <Badge className="bg-sky-900 text-white">shadcn/ui</Badge>
+        <div className="space-y-4">
+          {sideProjects.map((project) => (
+            <div className="pl-4 border-l-2 border-sky-900">
+              <p className="font-medium">{project.title}</p>
+              <Link to={project.url} target="_blank" className="mb-1">
+                {project.url}
+              </Link>
+              <div className="flex flex-wrap gap-2">
+                {project.keywords.map((keyword) => (
+                  <Badge className="bg-sky-900 text-white" key={keyword}>
+                    {keyword}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </SideProjectCard>
     </div>

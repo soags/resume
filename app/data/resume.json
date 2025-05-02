@@ -3,7 +3,9 @@
     "updatedAt": "2025年5月3日",
     "name": "曽我 周平",
     "label": "フルスタックエンジニア",
-    "summary": "フルスタックエンジニアおよびプロジェクトマネージャーとして、システム開発の全工程に幅広く携わり、React、Vue、Electron、ASP.NET Core、Laravelを用いた開発経験があります。\nフロントエンドからバックエンド、インフラ構築まで一貫して対応し、SQL ServerやPostgreSQLでのデータベース構築や、AWS、Dockerを活用したインフラ設計にも従事しました。\nプロジェクトマネージャーとしては、顧客折衝、進捗管理、リソース配分を担当し、開発チームと連携して納期と品質を確保しました。"
+    "summary": "フルスタックエンジニアおよびプロジェクトマネージャーとして、システム開発の全工程に幅広く携わり、React、Vue、Electron、ASP.NET Core、Laravelを用いた開発経験があります。\nフロントエンドからバックエンド、インフラ構築まで一貫して対応し、SQL ServerやPostgreSQLでのデータベース構築や、AWS、Dockerを活用したインフラ設計にも従事しました。\nプロジェクトマネージャーとしては、顧客折衝、進捗管理、リソース配分を担当し、開発チームと連携して納期と品質を確保しました。",
+    "github": "https://github.com/soags",
+    "zenn": "https://zenn.dev/soags"
   },
   "techStack": {
     "frontend": [
@@ -476,6 +478,34 @@
     {
       "title": "技術好きとしての自己成長意欲",
       "description": "業務外でも技術への探究心を持ち、新技術のキャッチアップやアウトプット活動に積極的に取り組んでいます。また、PHP、Laravel、Vueなど、業務で必要とされる技術領域を独学で習得し、即戦力として活用してきました。\n変化の速いIT業界において、常に学び続け、成長し続けることを大切にしています。"
+    }
+  ],
+  "sideProjects": [
+    {
+      "title": "Tab Cutter",
+      "url": "https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb",
+      "keywords": ["TypeScript"]
+    },
+    {
+      "title": "temp-dir-cli",
+      "url": "https://www.npmjs.com/package/temp-dir-cli",
+      "keywords": ["TypeScript"]
+    },
+    {
+      "title": "zenn-create",
+      "url": "https://www.npmjs.com/package/zenn-create",
+      "keywords": ["TypeScript"]
+    },
+    {
+      "title": "職務経歴書(本書)",
+      "url": "https://github.com/soags/resume",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "ReactRouter(Remix)",
+        "Tailwind CSS",
+        "shadcn/ui"
+      ]
     }
   ]
 }

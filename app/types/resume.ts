@@ -8,6 +8,7 @@ export type Resume = {
   education: Education;
   certificates: Certification[];
   promotions: Promotion[];
+  sideProjects: SideProject[];
 };
 
 export type Basics = {
@@ -15,8 +16,8 @@ export type Basics = {
   name: string;
   label: string;
   summary: string;
-  // github: string;
-  // zenn: string;
+  github: string;
+  zenn: string;
 };
 
 export type TechStack = {
@@ -42,3 +43,9 @@ export type Promotion = {
   title: string;
   description: string;
 };
+
+export type SideProject = {
+  title: string;
+  url: string;
+  keywords: string[];
+}

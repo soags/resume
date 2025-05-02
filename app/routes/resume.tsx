@@ -1,15 +1,4 @@
-import {
-  Calendar,
-  GraduationCap,
-  Github,
-  Globe,
-  Chrome,
-  Package,
-  Badge as LucideBadge,
-} from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
-import { Badge } from "~/components/ui/badge";
-
+import { Calendar, GraduationCap, Badge as LucideBadge } from "lucide-react";
 import resumeData from "~/data/resume.json";
 import type { Certification, Education, Resume } from "~/types/resume";
 import { TechStackContent } from "~/components/tech-stack-content";
@@ -121,7 +110,10 @@ export default function Resume() {
         {/* 業務外活動 */}
         <Section title="業務外活動" className="print:break-before-page">
           <Paper>
-            <SideProjectsContent />
+            <SideProjectsContent
+              basics={resume.basics}
+              sideProjects={resume.sideProjects}
+            />
           </Paper>
         </Section>
       </div>

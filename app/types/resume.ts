@@ -1,12 +1,21 @@
 import type { Work } from "./work";
 
 type Resume = {
-  updatedAt: string;
-  name: string;
+  basics: Basics;
   techStack: TechStack;
   highlights: string[];
-  works: Work[];
-  certifications: Certification[];
+  work: Work[];
+  certificates: Certification[];
+  promotions: Promotion[];
+};
+
+type Basics = {
+  updatedAt: string;
+  name: string;
+  label: string;
+  summary: string;
+  // github: string;
+  // zenn: string;
 };
 
 type TechStack = {
@@ -14,11 +23,16 @@ type TechStack = {
   backend: string[];
   infrastructure: string[];
   tools: string[];
-}
+};
 
 type Certification = {
   name: string;
   year: number;
-}
+};
 
-export type { Resume, TechStack, Certification };
+type Promotion = {
+  title: string;
+  description: string;
+};
+
+export type { Resume, TechStack, Certification, Promotion };

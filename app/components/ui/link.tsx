@@ -1,10 +1,14 @@
+import {
+  Link as RouterLink,
+  type LinkProps as RouterLinkProps,
+} from "react-router";
 import { cn } from "~/lib/utils";
 
-export function Link({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<"a">) {
+export function Link({ className, ...props }: RouterLinkProps) {
   return (
-    <a className={cn("text-sky-800 hover:underline", className)} {...props} />
+    <RouterLink
+      className={cn("text-blue-600 hover:underline inline-block", className)}
+      {...props}
+    />
   );
 }

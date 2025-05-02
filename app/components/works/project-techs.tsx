@@ -34,13 +34,13 @@ function ProjectTechTable({
       <TableBody>
         {rows.map((row, index) => (
           <TableRow key={index}>
-            <TableCell className="text-sm">
-              {row.map((tech, index) => (
+            <TableCell key={index} className="text-sm">
+              {row.map((tech, index2) => (
                 <>
-                <span key={index} className="whitespace-nowrap">
+                <span key={index2} className="whitespace-nowrap">
                   {tech}                  
                 </span>
-                {index < row.length - 1 && " / "}
+                {index2 < row.length - 1 && " / "}
                 </>
               ))}
             </TableCell>

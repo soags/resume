@@ -104,13 +104,6 @@ export default function Resume() {
           </Paper>
         </Section>
 
-        {/* 業務外活動 */}
-        <Section title="業務外活動">
-          <Paper>
-            <SideProjectsContent />
-          </Paper>
-        </Section>
-
         {/* 学歴 */}
         <Section title="学歴">
           <div className="flex items-start gap-4">
@@ -126,7 +119,7 @@ export default function Resume() {
             </div>
           </div>
         </Section>
-
+        
         {/* 資格 */}
         <Section title="資格">
           <div className="space-y-4">
@@ -135,6 +128,17 @@ export default function Resume() {
             ))}
           </div>
         </Section>
+        
+        {/* 業務外活動 */}
+        <Section title="業務外活動" className="print:break-before-page">
+          <Paper>
+            <SideProjectsContent />
+          </Paper>
+        </Section>
+
+        
+
+        
       </div>
     </div>
   );

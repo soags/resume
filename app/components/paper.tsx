@@ -4,7 +4,7 @@ export function Paper({
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
-    <div className={`bg-gray-50 srounded-lg p-6 ${className}`} {...props}>
+    <div className={`bg-gray-50 rounded-lg p-6 ${className}`} {...props}>
       {children}
     </div>
   );

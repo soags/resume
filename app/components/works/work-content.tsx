@@ -24,7 +24,7 @@ function WorkContent({ work }: { work: Work }) {
         </div>
       </div>
       <div>
-        <div className="space-y-6">
+        <div>
           {projects.map((project) => (
             <ProjectContent key={project.name} project={project} />
           ))}
@@ -60,27 +60,31 @@ function ProjectContent({ project }: { project: Project }) {
     .flat();
 
   return (
-    <div className="border-l-4 border-sky-900 pl-4 py-1 print:break-inside-avoid">
-      <h3 className="text-lg font-semibold">{name}</h3>
-      <p className="text-gray-500 text-sm mb-2">
-        {from} - {to} | {teamSizeText} |{rolesText}
-      </p>
+    <div className="print:break-inside-avoid pt-8">
+      <div className="border-l-4 border-sky-900 pl-4">
+        <h3 className="text-lg font-semibold">{name}</h3>
+        <p className="text-gray-500 text-sm mb-2">
+          {from} - {to} | {teamSizeText} |{rolesText}
+        </p>
 
-      {/* 概要 */}
-      <p className="text-gray-700 mb-3">{description}</p>
+        {/* 概要 */}
+        <p className="text-gray-700 mb-3">{description}</p>
 
-      {/* ハイライト */}
-      <ul className="list-disc list-inside mt-3 text-gray-700">
-        {highlights.map((highlight) => (
-          <li key={highlight}>{highlight}</li>
-        ))}
-      </ul>
+        {/* ハイライト */}
+        <ul className="list-disc list-inside mt-3 text-gray-700">
+          {highlights.map((highlight) => (
+            <li key={highlight}>{highlight}</li>
+          ))}
+        </ul>
 
-      {/* 技術スタック */}
-      <div className="flex flex-wrap gap-2 mt-3">
-        {techs.map((tech) => (
-          <Badge key={tech} className="bg-sky-900 text-white">{tech}</Badge>
-        ))}
+        {/* 技術スタック */}
+        <div className="flex flex-wrap gap-2 mt-3">
+          {techs.map((tech) => (
+            <Badge key={tech} className="bg-sky-900 text-white">
+              {tech}
+            </Badge>
+          ))}
+        </div>
       </div>
     </div>
   );

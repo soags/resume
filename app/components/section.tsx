@@ -6,7 +6,7 @@ type SectionProps = React.ComponentPropsWithoutRef<"section"> & {
 
 function Section({ title, className, children, ...props }: SectionProps) {
   return (
-    <section className={cn(className, "mb-8")} {...props}>
+    <section className={cn(className, "mt-8")} {...props}>
       <h2 className="text-2xl font-bold mb-4">{title}</h2>
       {children}
     </section>

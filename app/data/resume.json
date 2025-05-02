@@ -453,6 +453,12 @@
       ]
     }
   ],
+  "education": {
+    "institution": "名城大学",
+    "area": "理工学部 情報工学科",
+    "startDate": "2012年4月",
+    "endDate": "2016年3月"
+  },
   "certificates": [
     { "name": "情報処理技術者試験 応用情報技術者", "year": 2020 },
     { "name": "普通自動車免許", "year": 2012 },

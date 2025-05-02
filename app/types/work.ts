@@ -1,4 +1,4 @@
-type Work = {
+export type Work = {
   company: string;
   from: string;
   to: string;
@@ -6,7 +6,7 @@ type Work = {
   projects: Project[];
 };
 
-type Project = {
+export type Project = {
   name: string;
   from: string;
   to: string;
@@ -19,7 +19,7 @@ type Project = {
   techStack: ProjectTechStack;
 };
 
-type ProjectPhases = {
+export type ProjectPhases = {
   requirements: boolean;
   design: boolean;
   development: boolean;
@@ -29,7 +29,7 @@ type ProjectPhases = {
   others: boolean;
 };
 
-const projectPhaseNames: Record<keyof ProjectPhases, string> = {
+export const projectPhaseNames: Record<keyof ProjectPhases, string> = {
   requirements: "要件定義",
   design: "設計",
   development: "実装",
@@ -39,12 +39,8 @@ const projectPhaseNames: Record<keyof ProjectPhases, string> = {
   others: "その他",
 };
 
-type ProjectTechStack = {
+export type ProjectTechStack = {
   frontend?: string[];
   backend?: string[];
   infrastructure?: string[];
 };
-
-export type { Work, Project, ProjectPhases, ProjectTechStack };
-
-export { projectPhaseNames };

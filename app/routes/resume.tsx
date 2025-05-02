@@ -11,9 +11,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { Badge } from "~/components/ui/badge";
 
 import resumeData from "~/data/resume.json";
-import type { Certification, Resume } from "~/types/resume";
+import type { Certification, Education, Resume } from "~/types/resume";
 import { TechStackContent } from "~/components/tech-stack-content";
-import { WorkContent } from "~/components/works/work-content";
+import { WorkContent } from "~/components/work-content";
 import { Section } from "~/components/section";
 import { Paper } from "~/components/paper";
 import { SideProjectsContent } from "~/components/side-projects-content";
@@ -49,7 +49,7 @@ export default function Resume() {
       </div>
 
       <div className="p-8">
-        {/* 自己紹介 */}
+        {/* 職務要約 */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4">職務要約</h2>
           <div className="text-gray-700">
@@ -106,20 +106,9 @@ export default function Resume() {
 
         {/* 学歴 */}
         <Section title="学歴">
-          <div className="flex items-start gap-4">
-            <GraduationCap className="h-5 w-5 text-gray-500 mt-1" />
-            <div>
-              <h3 className="text-lg font-semibold">
-                名城大学 理工部 情報工学科
-              </h3>
-              <div className="flex items-center text-sm text-gray-500 mt-1">
-                <Calendar className="h-4 w-4 mr-1" />
-                <span>2012年4月 - 2016年3月</span>
-              </div>
-            </div>
-          </div>
+          <EducationItem education={resume.education} />
         </Section>
-        
+
         {/* 資格 */}
         <Section title="資格">
           <div className="space-y-4">
@@ -128,17 +117,30 @@ export default function Resume() {
             ))}
           </div>
         </Section>
-        
+
         {/* 業務外活動 */}
         <Section title="業務外活動" className="print:break-before-page">
           <Paper>
             <SideProjectsContent />
           </Paper>
         </Section>
+      </div>
+    </div>
+  );
+}
 
-        
-
-        
+function EducationItem({ education }: { education: Education }) {
+  return (
+    <div className="flex items-start gap-4">
+      <GraduationCap className="h-5 w-5 text-gray-500 mt-1" />
+      <div>
+        <h3 className="text-lg font-semibold">{`${education.institution} ${education.area}`}</h3>
+        <div className="flex items-center text-sm text-gray-500 mt-1">
+          <Calendar className="h-4 w-4 mr-1" />
+          <span>
+            {education.startDate} - {education.endDate}
+          </span>
+        </div>
       </div>
     </div>
   );

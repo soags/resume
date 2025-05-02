@@ -1,7 +1,7 @@
 import type { TechStack } from "~/types/resume";
 import { Badge } from "./ui/badge";
 
-function TechStackContent({ techStack }: { techStack: TechStack }) {
+export function TechStackContent({ techStack }: { techStack: TechStack }) {
   const { frontend, backend, infrastructure, tools } = techStack;
 
   return (
@@ -24,7 +24,11 @@ function TechStackRow({ title, items }: { title: string; items?: string[] }) {
       <p className="font-medium">{title}</p>
       <div className="flex flex-wrap gap-2 mt-1">
         {items.map((item) => (
-          <Badge key={item} variant="outline" className="bg-sky-900 text-white text-sm font-medium">
+          <Badge
+            key={item}
+            variant="outline"
+            className="bg-sky-900 text-white text-sm font-medium"
+          >
             {item}
           </Badge>
         ))}
@@ -32,5 +36,3 @@ function TechStackRow({ title, items }: { title: string; items?: string[] }) {
     </div>
   );
 }
-
-export { TechStackContent };

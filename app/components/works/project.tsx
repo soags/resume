@@ -30,9 +30,9 @@ function ProjectCard({
         </div>
       </div>
 
-      {features && techs && (
-        <div className="flex">
-          <div className="grow pt-2">
+      <div className="flex">
+        <div className="grow pt-2">
+          {features && (
             <div className="px-4">
               <ul className="list-disc pl-4 space-y-1">
                 {features.map((feature, index) => (
@@ -40,12 +40,14 @@ function ProjectCard({
                 ))}
               </ul>
             </div>
-          </div>
+          )}
+        </div>
+        {techs && (
           <div className="w-3xs flex-none">
             <ProjectTechTable {...techs} />
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

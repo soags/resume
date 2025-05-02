@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2025年4月14日",
+  "updatedAt": "2025年4月29日",
   "name": "曽我 周平",
   "techs": {
     "languages": [
@@ -59,25 +59,59 @@
           ],
           "techs": {
             "frontend": ["VB.NET", "WinForms"],
-            "backend": ["ASP.NET"],
+            "backend": ["ASP.NET", "SQL"],
             "database": ["Oracle Database 12c"],
             "server": ["Windows Server 2019", "IIS"]
           }
         },
         {
-          "name": "i-Reporter/PowerBI 不良実績収集システム開発",
+          "name": "i-Reporter 不良実績収集システム開発",
           "from": "2023年1月",
-          "to": "2023年3月"
+          "to": "2023年3月",
+          "features": [
+            "i-Reporterを使用して製品の不良情報を入力、Power BIで集計表示をするアプリを開発",
+            "2名の開発チームでリードエンジニアとして全工程を担当",
+            "Power BIの機能で対応できない複雑な集計はSQLビューやストアドプロシージャで対応"
+          ],
+          "techs": {
+            "frontend": ["i-Reporter", "Power BI"],
+            "backend": ["SQL"],
+            "database": ["PostgreSQL 14"],
+            "server": ["Windows Server 2019"]
+          }
         },
         {
           "name": "MotionBoard 工数入力システム開発",
           "from": "2023年1月",
-          "to": "2023年3月"
+          "to": "2023年3月",
+          "features": [
+            "MotionBoardを使用して工数入力、集計表示を行うアプリを開発",
+            "1人で全ての開発を担当",
+            "MotionBoardで工数入力と集計、DataSpiderで他システムとの連携を実現",
+            "MotionBoardの機能で対応できない複雑な集計はSQLビューやストアドプロシージャで対応"
+          ],
+          "techs": {
+            "frontend": ["MotionBoard"],
+            "backend": ["SQL", "DataSpider"],
+            "database": ["SQL Server 2019", "IBM Db2"],
+            "server": ["Windows Server 2019"]
+          }
         },
         {
           "name": "ColdFusion 予算申請システム開発",
           "from": "2022年10月",
-          "to": "2022年12月"
+          "to": "2022年12月",
+          "features": [
+            "3名の開発チームでリードエンジニアを担当",
+            "ColdFusionの習得、開発基盤の作成、設計、実装、テストを担当",
+            "顧客からの要望によりライブラリを一切使用しないPure JavaScriptでの開発を実施"
+          ],
+          "techs": {
+            "frontend": ["JavaScript", "CSS", "HTML"],
+            "backend": ["ColdFusion"],
+            "database": ["SQL Server 2019"],
+            "server": ["Windows Server 2019"]            
+          }
         },
         {
           "name": "生産実績分析システム開発",
@@ -92,11 +126,10 @@
             "HTTPヘッダーに遅延時間を埋め込むことでオフラインだった時間を考慮した時間計測を実現"
           ],
           "techs": {
-            "frontend": ["JavaScript", "Electron", "Vue 2", "Tailwind CSS"],
-            "backend": ["C#", "ASP.NET Core"],
+            "frontend": ["JavaScript", "Electron", "Vue 2", "Tailwind CSS", "MotionBoard"],
+            "backend": ["C#", "ASP.NET Core Web API"],
             "database": ["SQL Server 2019", "IBM Db2"],
-            "server": ["Windows Server 2019", "IIS"],
-            "others": ["MotionBoard"]
+            "server": ["Windows Server 2019", "IIS"]            
           }
         },
         {
@@ -114,7 +147,7 @@
           ],
           "techs": {
             "frontend": ["JavaScript", "Vue 2", "Tailwind CSS"],
-            "backend": ["C#", "ASP.NET Core"],
+            "backend": ["C#", "ASP.NET Core Web API"],
             "database": ["PostgreSQL 14"],
             "server": ["Windows Server 2019", "IIS"]
           }
@@ -132,7 +165,7 @@
           ],
           "techs": {
             "frontend": ["JavaScript", "Vue 2", "Tailwind CSS"],
-            "backend": ["C#", "ASP.NET Core"],
+            "backend": ["C#", "ASP.NET Core Web API"],
             "database": ["SQL Server 2019", "AWS RDS"],
             "server": ["Docker", "AWS Fargate"]
           }
@@ -193,22 +226,61 @@
         {
           "name": "クレーム報告システム開発",
           "from": "2018年4月",
-          "to": "2019年3月"
+          "to": "2019年3月",
+          "features": [
+            "3名の開発チームでリードエンジニアとして、設計から保守までを担当",
+            "プロジェクト全体の要件ヒアリング、見積もり、基本設計、課題管理を担当"            
+          ],
+          "techs": {
+            "frontend": ["JavaScript", "jQuery", "Wijimo", "Bootstrap"],
+            "backend": ["Java", "SAStruts"],
+            "database": ["SQL Server 2016"],
+            "server": ["Windows Server 2016", "IIS"]
+          }
         },
         {
           "name": "生産管理システム在庫関連機能改修",
           "from": "2017年11月",
-          "to": "2018年3月"
+          "to": "2018年3月",
+          "features": [
+            "製造業向けの生産管理システムの改修、在庫関連機能の再構築",
+            "在庫関連機能改修の影響範囲確認、実装、テスト、設計書修正を担当"
+          ],
+          "techs": {
+            "frontend": ["JavaScript", "jQuery", "Bootstrap"],
+            "backend": ["ASP.NET", "SQL"],
+            "database": ["IBM Db2"],
+            "server": ["Windows Server 2016", "IIS"]
+          }
         },
         {
           "name": "生産準備システム開発",
           "from": "2017年4月",
-          "to": "2017年10月"
+          "to": "2017年10月",
+          "features": [
+            "製造業向けの生産準備システムの開発",
+            "エンジニアとしてマスタ設定画面や帳票出力機能、メール配信機能の実装を担当"            
+          ],
+          "techs": {
+            "frontend": ["VB.NET", "WinForms", "SPREAD for Windows Forms"],
+            "backend": ["ASP.NET", "SQL"],
+            "database": ["Oracle Database 12c"],
+            "server": ["Windows Server 2016", "IIS"]
+          }
         },
         {
           "name": "販売管理システム開発",
           "from": "2016年9月",
-          "to": "2017年3月"
+          "to": "2017年3月",
+          "features": [
+            "製造業向けに受注・出荷・請求・売上・仕入・在庫管理を行うシステムの開発",
+            "エンジニアとしてマスタ設定画面や帳票出力機能の実装を担当"            
+          ],
+          "techs": {
+            "frontend": ["VB.NET", "WinForms", "SPREAD for Windows Forms", "ActiveReports for .NET", "SQL"],
+            "database": ["IBM Db2"],
+            "server": ["Windows Server 2012R2"]
+          }
         }
       ]
     }

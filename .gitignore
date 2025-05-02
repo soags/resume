@@ -6,4 +6,4 @@
 /build/
 
 # PDF files
-resume.pdf
+*.pdf

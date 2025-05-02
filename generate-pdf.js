@@ -1,25 +1,29 @@
 import puppeteer from 'puppeteer';
 
 (async () => {
+  const URL = "https://soags.github.io/resume/";
+  const FILE_NAME = `職務経歴書_${getDateStamp()}.pdf`;
+
   const browser = await puppeteer.launch({
     headless: 'new', 
   });
-  const page = await browser.newPage();
+  const page = await browser.newPage();  
+  await page.goto(URL, { waitUntil: 'networkidle0' });
 
-  // React ページのURL
-  await page.goto('http://localhost:5173/', { waitUntil: 'networkidle0' });
-
-  // 必要なら待機
-  // await page.waitForSelector('#app-ready'); // ページ内の特定要素待ち
-  // または
-  // await page.waitForTimeout(3000); // 固定で待つ方法
-
-  // PDF を作成
   await page.pdf({
-    path: 'resume.pdf',
+    path: FILE_NAME,
     format: 'A4',
     printBackground: true,
   });
 
   await browser.close();
 })();
+
+function getDateStamp() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const day = String(today.getDate()).padStart(2, '0');
+  
+  return `${year}${month}${day}`;
+}

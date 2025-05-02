@@ -1,4 +1,4 @@
-name: Deploy client
+name: Deploy
 
 on:
   push:
@@ -22,17 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          run_install: false
       - uses: actions/setup-node@v4
         with:
           node-version-file: .tool-versions
-          cache: 'pnpm'
+          cache: 'npm'
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install --frozen-lockfile
       - name: Build
-        run: pnpm run build
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

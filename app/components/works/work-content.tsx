@@ -1,7 +1,5 @@
 import type { Project, Work } from "~/types/work";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Calendar } from "lucide-react";
-import { ProjectSection } from "./project-section";
 import { Badge } from "../ui/badge";
 
 function WorkContent({ work }: { work: Work }) {
@@ -68,7 +66,7 @@ function ProjectContent({ project }: { project: Project }) {
         </p>
 
         {/* 概要 */}
-        <p className="text-gray-700 mb-3">{description}</p>
+        <p className="text-gray-700">{description}</p>
 
         {/* ハイライト */}
         <ul className="list-disc list-inside mt-3 text-gray-700">

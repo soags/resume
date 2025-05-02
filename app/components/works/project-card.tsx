@@ -16,7 +16,7 @@ function ProjectCard({ project }: { project: Project }) {
   } = project;
 
   return (
-    <div className="border rounded-xl px-4 py-2 print:break-inside-avoid ">
+    <div className="border border-gray-300 rounded-lg px-4 py-2 print:break-inside-avoid ">
       <div className="flex justify-between items-center mb-2">
         <h4 className="text-lg font-medium">{name}</h4>
         <div className="text-sm text-gray-600">
@@ -24,16 +24,12 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
 
-      <div className="flex mb-4">
-        <div className="grow pt-2">
-          <div className="px-4">
-            <ul className="list-disc pl-4 space-y-1">
-              {highlights.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <div className="flex mb-2">
+        <ul className="list-disc list-inside ml-2 space-y-1">
+          {highlights.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>          
       </div>
 
       <div className="flex mb-2 items-center">
@@ -52,7 +48,13 @@ function ProjectCard({ project }: { project: Project }) {
 
       <ProjectPhasesTimeline phases={phases} />
 
-      <ProjectTechStackTable techStack={techStack} />
+      <div className="mb-2">
+        <div className="font-medium">使用技術</div>
+        <div className="mt-1">
+          <ProjectTechStackTable techStack={techStack} />
+        </div>
+      </div>
+
     </div>
   );
 }

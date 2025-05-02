@@ -10,9 +10,11 @@ type Resume = {
 };
 
 type TechStack = {
-  languages: string[];
-  frameworks: string[];
+  frontend: string[];
+  backend: string[];
+  infrastructure: string[];
   tools: string[];
+  other: string[];
 }
 
 type Certification = {

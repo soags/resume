@@ -2,25 +2,42 @@ import type { TechStack } from "~/types/resume";
 import { Table, TableBody, TableCell, TableRow } from "./ui/table";
 
 function TechStackTable({ techStack }: { techStack: TechStack }) {
-  const { languages, frameworks, tools } = techStack;
+  const { frontend, backend, infrastructure, other, tools } = techStack;
 
   return (
-    <Table className="min-w-full divide-y divide-gray-300 text-md">
+    <Table className="divide-y">
       <TableBody>
-        <TableRow>
-          <TableCell className="text-nowrap">言語</TableCell>
-          <TableCell>{languages.join(" / ")}</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell className="text-nowrap">フレームワーク</TableCell>
-          <TableCell>{frameworks.join(" / ")}</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell className="text-nowrap">ツール</TableCell>
-          <TableCell>{tools.join(" / ")}</TableCell>
-        </TableRow>
+        <TechStackTableRow title="フロントエンド" items={frontend} />
+        <TechStackTableRow title="バックエンド" items={backend} />
+        <TechStackTableRow title="インフラ" items={infrastructure} />
+        <TechStackTableRow title="ツール" items={tools} />
+        <TechStackTableRow title="その他" items={other} />
       </TableBody>
     </Table>
+  );
+}
+
+function TechStackTableRow({
+  title,
+  items,
+}: {
+  title: string;
+  items: string[];
+}) {
+  return (
+    <TableRow>
+      <TableCell className="w-34">{title}</TableCell>
+      <TableCell>
+        {items.map((item, index) => (
+          <>
+            <span key={index} className="whitespace-nowrap">
+              {item}
+            </span>
+            {index < items.length - 1 && " / "}
+          </>
+        ))}
+      </TableCell>
+    </TableRow>
   );
 }
 

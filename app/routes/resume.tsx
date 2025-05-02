@@ -52,7 +52,7 @@ export default function Resume() {
         ))}
       </Section>
 
-      <Section title="自己PR">
+      <Section title="自己PR" className="print:break-before-page">
         <>
           <div className="flex flex-col space-y-4">
             <div>
@@ -172,7 +172,7 @@ export default function Resume() {
       </Section>
 
       <Section title="資格">
-        <ul className="space-y-1">
+        <ul className="list-disc list-inside ml-2 space-y-1">
           {resume.certifications.map((item) => (
             <li key={item.name}>{`${item.name} (${item.year}年)`}</li>
           ))}

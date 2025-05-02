@@ -2,33 +2,45 @@
   "updatedAt": "2025年4月29日",
   "name": "曽我 周平",
   "techStack": {
-    "languages": [
+    "frontend": [
       "TypeScript",
-      "JavaScript",
-      "PHP",
-      "C#",
-      "VB.NET",
-      "Java",
-      "SQL"
-    ],
-    "frameworks": [
       "React",
-      "Vue",
+      "Vue",      
+      "Tailwind CSS",      
+      "SASS",
+      "Electron",      
       "jQuery",
-      "Tailwind CSS",
       "Bootstrap",
-      "Node.js",
-      "Electron",
-      "Laravel",
-      "ASP.NET Core"
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "backend": [
+      "C#",
+      "ASP.NET Core Web API",
+      "PHP",
+      "Laravel",      
+      "VB.NET",      
+      "Java",      
+      "SQL",
+      "PostgreSQL",
+      "Oracle Database",
+      "SQL Server"
+    ],
+    "infrastructure": [
+      "Windows Server",
+      "Docker",
+      "AWS Fargate"
+    ],
+    "other": [      
+      "MotionBoard",
+      "i-Reporter",
+      "ColdFusion"
     ],
     "tools": [
-      "Git",
-      "Docker",
-      "Windows Server",
-      "SQL Server",
-      "PostgreSQL",
-      "Oracle Database"
+      "GitHub",
+      "Redmine",
+      "Notion"
     ]
   },
   "highlights": [
@@ -175,6 +187,7 @@
               "Vue 2",
               "Electron",
               "Tailwind CSS",
+              "SASS",
               "JavaScript",
               "HTML",
               "CSS",
@@ -213,7 +226,7 @@
             "others": false
           },
           "techStack": {
-            "frontend": ["Vue 2", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
+            "frontend": ["Vue 2", "Tailwind CSS", "SASS","JavaScript", "HTML", "CSS"],
             "backend": ["C#", "ASP.NET Core Web API", "PostgreSQL 14"],
             "infrastructure": ["Windows Server 2019", "IIS"]
           }
@@ -241,7 +254,7 @@
             "others": false
           },
           "techStack": {
-            "frontend": ["Vue 2", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
+            "frontend": ["Vue 2", "Tailwind CSS", "SASS","JavaScript", "HTML", "CSS"],
             "backend": ["C#", "ASP.NET Core Web API", "SQL Server 2019"],
             "infrastructure": ["Docker", "AWS Fargate", "AWS RDS"]
           }

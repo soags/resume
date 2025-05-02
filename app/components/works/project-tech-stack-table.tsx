@@ -12,64 +12,41 @@ function ProjectTechStackTable({ techStack }: { techStack: ProjectTechStack }) {
   const { frontend, backend, infrastructure } = techStack;
 
   return (
-    <Table className="min-w-full divide-y divide-gray-300">
-      <TableHeader>
-        <TableRow>
-          <TableHead>技術スタック</TableHead>
-        </TableRow>
-      </TableHeader>
+    <Table className="divide-y">
       <TableBody>
-        {frontend && frontend.length > 0 && (
-          <TableRow>
-            <TableCell className="text-sm font-medium">
-              フロントエンド
-            </TableCell>
-            <TableCell className="text-sm">
-              {frontend.map((tech, index) => (
-                <>
-                  <span key={index} className="whitespace-nowrap">
-                    {tech}
-                  </span>
-                  {index < frontend.length - 1 && " / "}
-                </>
-              ))}
-            </TableCell>
-          </TableRow>
-        )}
-        {backend && backend.length > 0 && (
-          <TableRow>
-            <TableCell className="text-sm font-medium">バックエンド</TableCell>
-            <TableCell className="text-sm">
-              {backend.map((tech, index) => (
-                <>
-                  <span key={index} className="whitespace-nowrap">
-                    {tech}
-                  </span>
-                  {index < backend.length - 1 && " / "}
-                </>
-              ))}
-            </TableCell>
-          </TableRow>
-        )}
-        {infrastructure && infrastructure.length > 0 && (
-          <TableRow>
-            <TableCell className="text-sm font-medium">
-              インフラ
-            </TableCell>
-            <TableCell className="text-sm">
-              {infrastructure.map((tech, index) => (
-                <>
-                  <span key={index} className="whitespace-nowrap">
-                    {tech}
-                  </span>
-                  {index < infrastructure.length - 1 && " / "}
-                </>
-              ))}
-            </TableCell>
-          </TableRow>
-        )}
+        <ProjectTechStackTableRow title="フロントエンド" items={frontend} />
+        <ProjectTechStackTableRow title="バックエンド" items={backend} />
+        <ProjectTechStackTableRow title="インフラ" items={infrastructure} />
       </TableBody>
     </Table>
+  );
+}
+
+function ProjectTechStackTableRow({
+  title,
+  items,
+}: {
+  title: string;
+  items?: string[];
+}) {
+  if (!items || items.length === 0) {
+    return null;
+  }
+
+  return (
+    <TableRow>
+      <TableCell className="w-30">{title}</TableCell>
+      <TableCell>
+        {items.map((item, index) => (
+          <>
+            <span key={index} className="whitespace-nowrap">
+              {item}
+            </span>
+            {index < items.length - 1 && " / "}
+          </>
+        ))}
+      </TableCell>
+    </TableRow>
   );
 }
 

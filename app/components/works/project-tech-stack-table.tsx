@@ -35,7 +35,7 @@ function ProjectTechStackTableRow({
 
   return (
     <TableRow>
-      <TableCell className="w-30">{title}</TableCell>
+      <TableCell className="w-40">{title}</TableCell>
       <TableCell>
         {items.map((item, index) => (
           <>

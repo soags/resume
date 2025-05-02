@@ -7,7 +7,7 @@ type SectionProps = {
 export function Section({ title, children, className }: SectionProps) {
   return (
     <section className={cn(className)}>
-      <h2 className="text-lg font-bold mb-2 border-b pb-2">{title}</h2>
+      <h2 className="text-xl font-medium mb-2 border-b pb-2">{title}</h2>
       {children}
     </section>
   );

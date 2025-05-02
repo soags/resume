@@ -16,10 +16,10 @@ function ProjectCard({ project }: { project: Project }) {
   } = project;
 
   return (
-    <div className="border border-gray-300 rounded-lg px-4 py-2 print:break-inside-avoid ">
+    <div className="border-2 rounded-xl border-gray-300 px-4 print:break-inside-avoid ">
       <div className="flex justify-between items-center mb-2">
         <h4 className="text-lg font-medium">{name}</h4>
-        <div className="text-sm text-gray-600">
+        <div className="text-gray-600">
           {from} 〜 {to}
         </div>
       </div>

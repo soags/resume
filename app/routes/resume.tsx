@@ -1,5 +1,5 @@
 import { Link } from "~/components/ui/link";
-import { Section } from "~/components/ui/section";
+import { Section } from "~/components/section";
 import { TechStackTable } from "~/components/tech-stack-table";
 import { WorkSection } from "~/components/works/work-section";
 
@@ -19,8 +19,8 @@ export default function Resume() {
   return (
     <div className="h-full max-w-6xl p-8 print:max-w-none space-y-4  print:p-0">
       <header className="mb-4">
-        <h1 className="text-lg text-center font-bold">職務経歴書</h1>
-        <div className="text-right text-sm">
+        <h1 className="text-2xl text-center font-medium">職務経歴書</h1>
+        <div className="text-right">
           <p>作成日: {resume.updatedAt}</p>
           <p>氏名: {resume.name}</p>
         </div>
@@ -35,7 +35,7 @@ export default function Resume() {
             フルスタックエンジニアとして、提案、要件定義から導入、保守まで幅広い工程に携わってきました。
           </p>
           <p>
-            また、プロジェクトマネージャーとしてプロジェクト全体をリードし、顧客折衝、進捗管理、アーキテクチャ設計や技術選定なども行っていました。
+            また、プロジェクトマネージャーとして、顧客折衝、進捗管理、アーキテクチャ設計、技術選定なども行っていました。
           </p>
         </>
       </Section>
@@ -44,7 +44,7 @@ export default function Resume() {
         <TechStackTable techStack={resume.techStack} />
       </Section>
 
-      <Section title="経験、スキルセット">
+      <Section title="スキル">
         <ul className="list-disc list-inside ml-2 space-y-1">
           {resume.highlights.map((item) => (
             <li key={item}>{item}</li>
@@ -62,7 +62,7 @@ export default function Resume() {
         <>
           <div className="flex flex-col space-y-4">
             <div>
-              <h3 className="font-bold mb-2 underline">
+              <h3 className="font-medium mb-2 text-lg">
                 フルスタックなエンジニアリングスキル
               </h3>
               <div className="ml-4">
@@ -81,7 +81,7 @@ export default function Resume() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold mb-2 underline">
+              <h3 className="font-medium mb-2 text-lg">
                 プロジェクトマネジメントと顧客折衝スキル
               </h3>
               <div className="ml-4">
@@ -94,7 +94,7 @@ export default function Resume() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold mb-2 underline">
+              <h3 className="font-medium mb-2 text-lg">
                 技術好きとしての自己成長意欲
               </h3>
               <div className="ml-4">
@@ -116,7 +116,7 @@ export default function Resume() {
       <Section title="業務外活動">
         <div className="space-y-2">
           <div className="flex items-center">
-            <div className="w-40 font-medium pr-2">GitHub</div>
+            <div className="w-40 pr-2">GitHub</div>
             <div>
               <Link href="https://github.com/soags" target="_blank">
                 https://github.com/soags
@@ -124,7 +124,7 @@ export default function Resume() {
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-40 font-medium pr-2">Zenn</div>
+            <div className="w-40 pr-2">Zenn</div>
             <div>
               <Link href="https://zenn.dev/soags" target="_blank">
                 https://zenn.dev/soags
@@ -132,7 +132,7 @@ export default function Resume() {
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-40 font-medium pr-2">Chrome拡張機能</div>
+            <div className="w-40 pr-2">Chrome拡張機能</div>
             <div>
               <Link
                 href="https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb"
@@ -143,7 +143,7 @@ export default function Resume() {
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-40 font-medium pr-2">npmパッケージ</div>
+            <div className="w-40 pr-2">npmパッケージ</div>
             <div>
               <Link
                 href="https://www.npmjs.com/package/temp-dir-cli"

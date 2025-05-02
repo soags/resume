@@ -5,6 +5,6 @@ export function Link({
   ...props
 }: React.ComponentPropsWithoutRef<"a">) {
   return (
-    <a className={cn("text-blue-600 hover:underline", className)} {...props} />
+    <a className={cn("text-sky-800 hover:underline", className)} {...props} />
   );
 }

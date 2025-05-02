@@ -28,7 +28,7 @@
       "Windows Server",
       "SQL Server",
       "PostgreSQL",
-      "Oracle Database"      
+      "Oracle Database"
     ]
   },
   "skills": [
@@ -53,15 +53,25 @@
           "to": "2025年3月",
           "features": [
             "受注前から営業と提案活動を行い、要件定義、提案資料作成、工数見積を担当",
-            "3名の開発チームでPMとエンジニアを兼任し、要件定義から導入までをリード",
-            "プロジェクト全体の要件定義、基本設計、進捗管理、課題管理を担当",
+            "プロジェクトマネージャーとリードエンジニアを兼任し、要件定義から導入までをリード",
+            "プロジェクト全体の要件定義、アーキテクチャ設計、進捗管理、課題管理、各機能の設計を担当",
             "基幹システムの仕様書と現在のシステム仕様を突き合わせ、連携方針を提案"
           ],
+          "roles": ["プロジェクトマネージャー", "リードエンジニア"],
+          "teamSize": 3,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
             "frontend": ["VB.NET", "WinForms"],
-            "backend": ["ASP.NET", "SQL"],
-            "database": ["Oracle Database 12c"],
-            "server": ["Windows Server 2019", "IIS"]
+            "backend": ["ASP.NET", "SQL", "Oracle Database 12c", "IIS"],
+            "server": ["Windows Server 2019"]
           }
         },
         {
@@ -70,13 +80,22 @@
           "to": "2023年3月",
           "features": [
             "i-Reporterを使用して製品の不良情報を入力、Power BIで集計表示をするアプリを開発",
-            "2名の開発チームでリードエンジニアとして全工程を担当",
-            "Power BIの機能で対応できない複雑な集計はSQLビューやストアドプロシージャで対応"
+            "i-Reporterを新たに習得、検証し、社内向けの開発基盤、ドキュメントを作成"
           ],
+          "roles": ["リードエンジニア"],
+          "teamSize": 2,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
             "frontend": ["i-Reporter", "Power BI"],
-            "backend": ["SQL"],
-            "database": ["PostgreSQL 14"],
+            "backend": ["SQL", "PostgreSQL 14"],
             "server": ["Windows Server 2019"]
           }
         },
@@ -85,15 +104,22 @@
           "from": "2023年1月",
           "to": "2023年3月",
           "features": [
-            "MotionBoardを使用して工数入力、集計表示を行うアプリを開発",
-            "1人で全ての開発を担当",
-            "MotionBoardで工数入力と集計、DataSpiderで他システムとの連携を実現",
-            "MotionBoardの機能で対応できない複雑な集計はSQLビューやストアドプロシージャで対応"
+            "MotionBoardで工数入力と集計、DataSpiderで他システムとの連携を実現"
           ],
+          "roles": ["プロジェクトマネージャー", "リードエンジニア"],
+          "teamSize": 1,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
             "frontend": ["MotionBoard"],
-            "backend": ["SQL", "DataSpider"],
-            "database": ["SQL Server 2019", "IBM Db2"],
+            "backend": ["SQL", "DataSpider", "SQL Server 2019", "IBM Db2"],
             "server": ["Windows Server 2019"]
           }
         },
@@ -102,15 +128,24 @@
           "from": "2022年10月",
           "to": "2022年12月",
           "features": [
-            "3名の開発チームでリードエンジニアを担当",
-            "ColdFusionの習得、開発基盤の作成、設計、実装、テストを担当",
-            "顧客からの要望によりライブラリを一切使用しないJavaScriptでの開発を実施"
+            "ColdFusionを新たに習得、検証し、社内向けの開発基盤、ドキュメントを作成",
+            "顧客からの要望によりライブラリを一切使用しない純粋なJavaScriptでの開発を実施"
           ],
+          "roles": ["リードエンジニア"],
+          "teamSize": 3,
+          "phases": {
+            "requirements": false,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": false,
+            "maintenance": false,
+            "others": false
+          },
           "techs": {
             "frontend": ["JavaScript", "CSS", "HTML"],
-            "backend": ["ColdFusion"],
-            "database": ["SQL Server 2019"],
-            "server": ["Windows Server 2019"]            
+            "backend": ["ColdFusion", "SQL", "SQL Server 2019"],
+            "server": ["Windows Server 2019"]
           }
         },
         {
@@ -118,18 +153,41 @@
           "from": "2022年9月",
           "to": "2023年12月",
           "features": [
-            "4名の開発チームでPMとエンジニアを兼任し、要件定義から保守までをリード",
-            "プロジェクト全体の要件定義、見積もり、交渉、設計、進捗管理、課題管理を担当",
+            "プロジェクト全体の要件定義、見積もり、顧客折衝、アーキテクチャ設計、進捗管理、課題管理を担当",
             "タブレットに接続したRFIDリーダーを使用してMIFARE規格の社員証を読み取りする機能を実装",
-            "PCからのWeb閲覧とRFID読み取りを行うタブレットの対応を安価に両立するために、Electronを採用",
-            "ネットワーク断絶時のリトライ処理を実装する際に、ElectronがBackgroundSync非対応だったため、ServiceWorkerのキャッシュとスクラッチのリトライ処置を組み合わせて対応",
+            "PCからのWeb閲覧とタブレットでのRFID読み取りを安価に両立するために、Electronを採用",
+            "BackgroundSync非対応のElectron向けに、ServiceWorkerとスクラッチを組み合わせてリトライ処理を実装",
             "HTTPヘッダーに遅延時間を埋め込むことでオフラインだった時間を考慮した時間計測を実現"
           ],
+          "roles": ["プロジェクトマネージャー", "リードエンジニア"],
+          "teamSize": 4,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
-            "frontend": ["JavaScript", "Electron", "Vue 2", "Tailwind CSS", "MotionBoard"],
-            "backend": ["C#", "ASP.NET Core Web API"],
-            "database": ["SQL Server 2019", "IBM Db2"],
-            "server": ["Windows Server 2019", "IIS"]            
+            "frontend": [
+              "Vue 2",
+              "Electron",
+              "Tailwind CSS",
+              "JavaScript",
+              "HTML",
+              "CSS",
+              "MotionBoard"
+            ],
+            "backend": [
+              "C#",
+              "ASP.NET Core Web API",
+              "SQL Server 2019",
+              "IBM Db2",
+              "IIS"
+            ],
+            "server": ["Windows Server 2019"]
           }
         },
         {
@@ -137,18 +195,27 @@
           "from": "2021年7月",
           "to": "2021年8月",
           "features": [
-            "疑似的な標的型攻撃メールを送信し、標的型攻撃に対する注意喚起を行うアプリを開発",
-            "小規模な案件だったため、1人で全ての開発を担当",
+            "社員に対して一斉に標的型攻撃メールを送信し、標的型攻撃に対する注意喚起を行うアプリを開発",
             "リンク、Excel、Word、PDFの攻撃方法を選択し、開いたユーザーを特定し集計する機能を実装",
             "リンクに暗号化したユーザー情報を含めることでバレにくく確実な開封集計を実現",
             "ExcelはWebビーコンを使用し、マクロを有効化した瞬間にGETリクエストが送信される開封集計を実現",
             "Wordは仕様の制限で同様の手法が使えないため、docxの内部ファイルを自動編集することでビーコンの埋め込みと開封集計を実現",
             "PDFはJavaScriptを使用し、開封時にGETリクエストを送信することで開封集計を実現"
           ],
+          "roles": ["プロジェクトマネージャー", "リードエンジニア"],
+          "teamSize": 1,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
-            "frontend": ["JavaScript", "Vue 2", "Tailwind CSS"],
-            "backend": ["C#", "ASP.NET Core Web API"],
-            "database": ["PostgreSQL 14"],
+            "frontend": ["Vue 2", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
+            "backend": ["C#", "ASP.NET Core Web API", "PostgreSQL 14", "IIS"],
             "server": ["Windows Server 2019", "IIS"]
           }
         },
@@ -163,25 +230,45 @@
             "コンテナ開発という社長指示があったため、コンテナを使った開発基盤を構築",
             "AWS Fargateを使用したデプロイ環境を構築"
           ],
+          "roles": ["リードエンジニア"],
+          "teamSize": 10,
+          "phases": {
+            "requirements": false,
+            "design": true,
+            "development": false,
+            "testing": false,
+            "deployment": true,
+            "maintenance": false,
+            "others": false
+          },
           "techs": {
-            "frontend": ["JavaScript", "Vue 2", "Tailwind CSS"],
-            "backend": ["C#", "ASP.NET Core Web API"],
-            "database": ["SQL Server 2019", "AWS RDS"],
-            "server": ["Docker", "AWS Fargate"]
+            "frontend": ["Vue 2", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
+            "backend": ["C#", "ASP.NET Core Web API", "SQL Server 2019"],
+            "server": ["Docker", "AWS Fargate", "AWS RDS"]
           }
         },
         {
           "name": "アシスト分科会 ソリューション研究会",
           "from": "2021年4月",
           "to": "2022年3月",
-          "description": "各社代表1名でチームを作り1年をかけてテーマに基づいた研究を行うイベントに参加(11名参加)。コンテナ技術導入について調査、議論し、勘所をまとめた論文、プレゼンテーションを作成した",
           "features": [
             "様々な業種の企業から代表1名が集まり、各テーマに関して議論、研究を行う研究会",
             "11名のチームのリーダーに立候補し、チームの取りまとめを行った",
             "コンテナ技術をこれから取り入れる際の勘所をまとめた論文を作成、プレゼンを行った"
           ],
+          "roles": ["プロジェクトマネージャー"],
+          "teamSize": 11,
+          "phases": {
+            "requirements": false,
+            "design": false,
+            "development": false,
+            "testing": false,
+            "deployment": false,
+            "maintenance": false,
+            "others": true
+          },
           "techs": {
-            "others": ["Docker", "Kubernetes"]
+            "server": ["Docker", "Kubernetes", "AWS", "Azure", "GCP"]
           }
         },
         {
@@ -189,20 +276,30 @@
           "from": "2020年4月",
           "to": "2021年3月",
           "features": [
-            "4名の開発チームでPMとエンジニアを兼任し、要件定義から保守までをリード",
-            "プロジェクト全体の要件定義、見積もり、交渉、基本設計、進捗管理、課題管理を担当",
+            "プロジェクト全体の要件定義、見積もり、交渉、設計、進捗管理、課題管理を担当",
             "海外オフショアメンバーとの連携を行い、仕様指示及び品質管理を行った",
             "PHPの言語指定のみであったため、顧客にLaravel/Vueでの開発を提案",
-            "PHPの開発経験、社内開発事例はなかったが、独学で習得し開発基盤を構築",
-            "Vueの社内開発事例もなかったため開発基盤を構築",
+            "PHPを新たに習得、検証し、社内向けの開発基盤、ドキュメントを作成",
+            "Vueを新たに習得、検証し、社内向けの開発基盤、ドキュメントを作成",
             "メール配信に関してESPの使用ができない制約があったため、Redisを使用したメール配信を実装",
             "顔写真、証明写真の撮影のためWebRTCを使用した写真撮影機能を実装"
           ],
+          "roles": ["リードエンジニア"],
+          "teamSize": 4,
+          "teamSizeOffshore": 2,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
-            "frontend": ["JavaScript", "Vue 2", "Bootstrap"],
-            "backend": ["PHP", "Laravel"],
-            "database": ["IBM Db2", "MySQL"],
-            "server": ["Windows Server 2016", "IIS", "Redis"]
+            "frontend": ["Vue 2", "Bootstrap", "JavaScript", "HTML", "CSS"],
+            "backend": ["Laravel", "PHP", "IBM Db2", "MySQL", "Redis", "IIS"],
+            "server": ["Windows Server 2016"]
           }
         },
         {
@@ -210,17 +307,27 @@
           "from": "2019年4月",
           "to": "2020年3月",
           "features": [
-            "5名の開発チームでPMとエンジニアを兼任し、要件定義から保守までをリード",
-            "プロジェクト全体の要件定義、見積もり、交渉、基本設計、進捗管理、課題管理を担当",
+            "プロジェクト全体の要件定義、見積もり、顧客折衝、設計、進捗管理、課題管理を担当",
             "海外オフショアメンバーとの連携を行い、仕様指示及び品質管理を行った",
             "原価集計コアロジックなどの複雑な処理の実装を担当",
             "Active Directory連携の検証を行い、シングルサインオン機能を実装"
           ],
+          "roles": ["プロジェクトマネージャー", "リードエンジニア"],
+          "teamSize": 5,
+          "teamSizeOffshore": 2,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
             "frontend": ["VB.NET", "WinForms"],
-            "backend": ["ASP.NET"],
-            "database": ["Oracle Database 12c"],
-            "server": ["Windows Server 2019", "IIS", "Active Directory"]
+            "backend": ["ASP.NET", "Oracle Database 12c", "IIS"],
+            "server": ["Windows Server 2019", "Active Directory"]
           }
         },
         {
@@ -228,14 +335,30 @@
           "from": "2018年4月",
           "to": "2019年3月",
           "features": [
-            "3名の開発チームでリードエンジニアとして、設計から保守までを担当",
-            "プロジェクト全体の要件定義、見積もり、基本設計、課題管理を担当"            
+            "プロジェクト全体の要件定義、見積もり、設計、実装、課題管理を担当"
           ],
+          "roles": ["リードエンジニア"],
+          "teamSize": 3,
+          "phases": {
+            "requirements": true,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": true,
+            "maintenance": true,
+            "others": false
+          },
           "techs": {
-            "frontend": ["JavaScript", "jQuery", "Wijimo", "Bootstrap"],
-            "backend": ["Java", "SAStruts"],
-            "database": ["SQL Server 2016"],
-            "server": ["Windows Server 2016", "IIS"]
+            "frontend": [
+              "jQuery",
+              "Wijimo",
+              "Bootstrap",
+              "JavaScript",
+              "HTML",
+              "CSS"
+            ],
+            "backend": ["Java", "SAStruts", "SQL Server 2016", "IIS"],
+            "server": ["Windows Server 2016"]
           }
         },
         {
@@ -243,14 +366,23 @@
           "from": "2017年11月",
           "to": "2018年3月",
           "features": [
-            "製造業向けの生産管理システムの改修、在庫関連機能の再構築",
             "在庫関連機能改修の影響範囲確認、実装、テスト、設計書修正を担当"
           ],
+          "roles": ["エンジニア"],
+          "teamSize": 6,
+          "phases": {
+            "requirements": false,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": false,
+            "maintenance": false,
+            "others": false
+          },
           "techs": {
-            "frontend": ["JavaScript", "jQuery", "Bootstrap"],
-            "backend": ["ASP.NET", "SQL"],
-            "database": ["IBM Db2"],
-            "server": ["Windows Server 2016", "IIS"]
+            "frontend": ["jQuery", "Bootstrap", "JavaScript"],
+            "backend": ["ASP.NET", "SQL", "IBM Db2", "IIS"],
+            "server": ["Windows Server 2016"]
           }
         },
         {
@@ -258,27 +390,49 @@
           "from": "2017年4月",
           "to": "2017年10月",
           "features": [
-            "製造業向けの生産準備システムの開発",
-            "エンジニアとしてマスタ設定画面や帳票出力機能、メール配信機能の実装を担当"            
+            "マスタ設定画面や帳票出力機能、メール配信機能の実装を担当"
           ],
+          "roles": ["エンジニア"],
+          "teamSize": 8,
+          "phases": {
+            "requirements": false,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": false,
+            "maintenance": false,
+            "others": false
+          },
           "techs": {
             "frontend": ["VB.NET", "WinForms", "SPREAD for Windows Forms"],
-            "backend": ["ASP.NET", "SQL"],
-            "database": ["Oracle Database 12c"],
-            "server": ["Windows Server 2016", "IIS"]
+            "backend": ["ASP.NET", "SQL", "Oracle Database 12c", "IIS"],
+            "server": ["Windows Server 2016"]
           }
         },
         {
           "name": "販売管理システム開発",
           "from": "2016年9月",
           "to": "2017年3月",
-          "features": [
-            "製造業向けに受注、出荷、請求、売上、仕入、在庫管理を行うシステムの開発",
-            "エンジニアとしてマスタ設定画面や帳票出力機能の実装を担当"            
-          ],
+          "features": ["マスタ設定画面や帳票出力機能の実装を担当"],
+          "roles": ["エンジニア"],
+          "teamSize": 6,
+          "phases": {
+            "requirements": false,
+            "design": true,
+            "development": true,
+            "testing": true,
+            "deployment": false,
+            "maintenance": false,
+            "others": false
+          },
           "techs": {
-            "frontend": ["VB.NET", "WinForms", "SPREAD for Windows Forms", "ActiveReports for .NET", "SQL"],
-            "database": ["IBM Db2"],
+            "frontend": [
+              "VB.NET",
+              "WinForms",
+              "SPREAD for Windows Forms",
+              "ActiveReports for .NET"
+            ],
+            "backend": ["SQL", "IBM Db2"],
             "server": ["Windows Server 2012R2"]
           }
         }

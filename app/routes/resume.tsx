@@ -108,65 +108,51 @@ export default function Resume() {
       </Section>
 
       <Section title="業務外活動">
-        <div className="flex flex-col space-y-2">
+        <div className="space-y-2">
+          <div className="flex items-center">
+            <div className="w-40 font-medium pr-2">GitHub</div>
           <div>
-            <h3 className="font-bold">GitHub</h3>
-            <div className="pl-4 mt-1">
               <Link href="https://github.com/soags" target="_blank">
                 https://github.com/soags
               </Link>
             </div>
           </div>
-
+          <div className="flex items-center">
+            <div className="w-40 font-medium pr-2">Zenn</div>
           <div>
-            <h3 className="font-bold">Zenn</h3>
-            <div className="pl-4 mt-1">
               <Link href="https://zenn.dev/soags" target="_blank">
                 https://zenn.dev/soags
               </Link>
             </div>
           </div>
-
+          <div className="flex items-center">
+            <div className="w-40 font-medium pr-2">Chrome拡張機能</div>
           <div>
-            <h3 className="font-bold">Chrome拡張機能の開発</h3>
-            <ul className="list-disc list-inside mt-1 ml-2 space-y-1">
-              <li>
-                Tab Cutter (
                 <Link
                   href="https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb"
                   target="_blank"
                 >
-                  https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb
+                Tab Cutter
                 </Link>
-                )
-              </li>
-            </ul>
+            </div>
           </div>
-
+          <div className="flex items-center">
+            <div className="w-40 font-medium pr-2">npmパッケージ</div>
           <div>
-            <h3 className="font-bold">npmパッケージの開発</h3>
-            <ul className="list-disc list-inside mt-1 ml-2 space-y-1">
-              <li>
-                temp-dir-cli (
                 <Link
                   href="https://www.npmjs.com/package/temp-dir-cli"
                   target="_blank"
                 >
-                  https://www.npmjs.com/package/temp-dir-cli
+                temp-dir-cli
                 </Link>
-                )
-              </li>
-              <li>
-                zenn-create (
+              { " / " }
                 <Link
                   href="https://www.npmjs.com/package/zenn-create"
                   target="_blank"
                 >
-                  https://www.npmjs.com/package/zenn-create
+                zenn-create
                 </Link>
-                )
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </Section>

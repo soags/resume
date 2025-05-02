@@ -1,9 +1,12 @@
-import { Link } from "~/components/link";
-import { Section } from "~/components/section";
-import { TechTable } from "~/components/tech-table";
-import { WorkSection } from "~/components/works/work";
+import { Link } from "~/components/ui/link";
+import { Section } from "~/components/ui/section";
+import { TechStackTable } from "~/components/tech-stack-table";
+import { WorkSection } from "~/components/works/work-section";
 
-import data from "~/data/resume.json";
+import resumeData from "~/data/resume.json";
+import type { Resume } from "~/types/resume";
+
+const resume: Resume = resumeData;
 
 export function meta() {
   return [
@@ -18,8 +21,8 @@ export default function Resume() {
       <header className="mb-4">
         <h1 className="text-lg text-center font-bold">職務経歴書</h1>
         <div className="text-right text-sm">
-          <p>作成日: {data.updatedAt}</p>
-          <p>氏名: {data.name}</p>
+          <p>作成日: {resume.updatedAt}</p>
+          <p>氏名: {resume.name}</p>
         </div>
       </header>
 
@@ -32,20 +35,20 @@ export default function Resume() {
       </Section>
 
       <Section title="技術スタック">
-        <TechTable {...data.techs} />
+        <TechStackTable techStack={resume.techStack} />
       </Section>
 
       <Section title="経験、スキルセット">
         <ul className="list-disc list-inside ml-2 space-y-1">
-          {data.skills.map((item, index) => (
-            <li key={index}>{item}</li>
+          {resume.highlights.map((item) => (
+            <li key={item}>{item}</li>
           ))}
         </ul>
       </Section>
 
       <Section title="職務経歴">
-        {data.works.map((work, index) => (
-          <WorkSection {...work} key={index} />
+        {resume.works.map((work) => (
+          <WorkSection key={work.company} work={work} />
         ))}
       </Section>
 
@@ -63,7 +66,8 @@ export default function Resume() {
                 <p>
                   React、Vue、Electronを用いたモダンフロントエンド開発、jQueryを使用したレガシーフロントエンド開発、ASP.NET
                   CoreやLaravelを用いたサーバーサイド開発、さらにWindows
-                  Serverでの各種DB構築(SQL Server/PostgreSQL/Oracle Database)やDocker、AWSといったインフラレイヤーにも対応してきました。
+                  Serverでの各種DB構築(SQL Server/PostgreSQL/Oracle
+                  Database)やDocker、AWSといったインフラレイヤーにも対応してきました。
                 </p>
                 <p>
                   技術選定やアーキテクチャ設計にも積極的に携わり、単なる開発者にとどまらず、システム全体を俯瞰して最適な設計を提案、実現するエンジニアリングを心がけています。
@@ -84,7 +88,9 @@ export default function Resume() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold mb-2 underline">技術好きとしての自己成長意欲</h3>
+              <h3 className="font-bold mb-2 underline">
+                技術好きとしての自己成長意欲
+              </h3>
               <div className="ml-4">
                 <p>
                   業務外でも技術への探究心を持ち続け、新技術のキャッチアップやアウトプット活動に取り組んでいます。
@@ -167,8 +173,8 @@ export default function Resume() {
 
       <Section title="資格">
         <ul className="space-y-1">
-          {data.certifications.map((item, index) => (
-            <li key={index}>{`${item.name} (${item.year}年)`}</li>
+          {resume.certifications.map((item) => (
+            <li key={item.name}>{`${item.name} (${item.year}年)`}</li>
           ))}
         </ul>
       </Section>

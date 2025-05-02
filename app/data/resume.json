@@ -1,7 +1,7 @@
 {
   "updatedAt": "2025年4月29日",
   "name": "曽我 周平",
-  "techs": {
+  "techStack": {
     "languages": [
       "TypeScript",
       "JavaScript",
@@ -31,7 +31,7 @@
       "Oracle Database"
     ]
   },
-  "skills": [
+  "highlights": [
     "企画、要件定義から導入、保守まで一貫して担当している経験",
     "5 名程度のチームでのプロジェクトマネジメント",
     "企画、要件定義、仕様説明、QA対応などの対顧客コミュニケーション",
@@ -51,7 +51,7 @@
           "name": "原価企画システム新機能開発（原価シミュレーション機能、基幹システム連携機能）",
           "from": "2024年4月",
           "to": "2025年3月",
-          "features": [
+          "highlights": [
             "受注前から営業と提案活動を行い、要件定義、提案資料作成、工数見積を担当",
             "プロジェクトマネージャーとリードエンジニアを兼任し、要件定義から導入までをリード",
             "プロジェクト全体の要件定義、アーキテクチャ設計、進捗管理、課題管理、各機能の設計を担当",
@@ -68,17 +68,17 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["VB.NET", "WinForms"],
-            "backend": ["ASP.NET", "SQL", "Oracle Database 12c", "IIS"],
-            "server": ["Windows Server 2019"]
+            "backend": ["ASP.NET", "SQL", "Oracle Database 12c"],
+            "infrastructure": ["Windows Server 2019", "IIS"]
           }
         },
         {
           "name": "i-Reporter 不良実績収集システム開発",
           "from": "2023年1月",
           "to": "2023年3月",
-          "features": [
+          "highlights": [
             "i-Reporterを使用して製品の不良情報を入力、Power BIで集計表示をするアプリを開発",
             "i-Reporterを新たに習得、検証し、社内向けの開発基盤、ドキュメントを作成"
           ],
@@ -93,17 +93,17 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["i-Reporter", "Power BI"],
             "backend": ["SQL", "PostgreSQL 14"],
-            "server": ["Windows Server 2019"]
+            "infrastructure": ["Windows Server 2019"]
           }
         },
         {
           "name": "MotionBoard 工数入力システム開発",
           "from": "2023年1月",
           "to": "2023年3月",
-          "features": [
+          "highlights": [
             "MotionBoardで工数入力と集計、DataSpiderで他システムとの連携を実現"
           ],
           "roles": ["プロジェクトマネージャー", "リードエンジニア"],
@@ -117,17 +117,17 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["MotionBoard"],
             "backend": ["SQL", "DataSpider", "SQL Server 2019", "IBM Db2"],
-            "server": ["Windows Server 2019"]
+            "infrastructure": ["Windows Server 2019"]
           }
         },
         {
           "name": "ColdFusion 予算申請システム開発",
           "from": "2022年10月",
           "to": "2022年12月",
-          "features": [
+          "highlights": [
             "ColdFusionを新たに習得、検証し、社内向けの開発基盤、ドキュメントを作成",
             "顧客からの要望によりライブラリを一切使用しない純粋なJavaScriptでの開発を実施"
           ],
@@ -142,17 +142,17 @@
             "maintenance": false,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["JavaScript", "CSS", "HTML"],
             "backend": ["ColdFusion", "SQL", "SQL Server 2019"],
-            "server": ["Windows Server 2019"]
+            "infrastructure": ["Windows Server 2019"]
           }
         },
         {
           "name": "生産実績分析システム開発",
           "from": "2022年9月",
           "to": "2023年12月",
-          "features": [
+          "highlights": [
             "プロジェクト全体の要件定義、見積もり、顧客折衝、アーキテクチャ設計、進捗管理、課題管理を担当",
             "タブレットに接続したRFIDリーダーを使用してMIFARE規格の社員証を読み取りする機能を実装",
             "PCからのWeb閲覧とタブレットでのRFID読み取りを安価に両立するために、Electronを採用",
@@ -170,7 +170,7 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": [
               "Vue 2",
               "Electron",
@@ -184,17 +184,16 @@
               "C#",
               "ASP.NET Core Web API",
               "SQL Server 2019",
-              "IBM Db2",
-              "IIS"
+              "IBM Db2"
             ],
-            "server": ["Windows Server 2019"]
+            "infrastructure": ["Windows Server 2019", "IIS"]
           }
         },
         {
           "name": "標的型攻撃メール訓練ツール開発",
           "from": "2021年7月",
           "to": "2021年8月",
-          "features": [
+          "highlights": [
             "社員に対して一斉に標的型攻撃メールを送信し、標的型攻撃に対する注意喚起を行うアプリを開発",
             "リンク、Excel、Word、PDFの攻撃方法を選択し、開いたユーザーを特定し集計する機能を実装",
             "リンクに暗号化したユーザー情報を含めることでバレにくく確実な開封集計を実現",
@@ -213,17 +212,17 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["Vue 2", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
-            "backend": ["C#", "ASP.NET Core Web API", "PostgreSQL 14", "IIS"],
-            "server": ["Windows Server 2019", "IIS"]
+            "backend": ["C#", "ASP.NET Core Web API", "PostgreSQL 14"],
+            "infrastructure": ["Windows Server 2019", "IIS"]
           }
         },
         {
           "name": "社内基幹システム再構築",
           "from": "2021年4月",
           "to": "2021年6月",
-          "features": [
+          "highlights": [
             "技術に詳しいメンバーとして、技術選定、アーキテクチャ設計を担当",
             "社内で標準的に使われていた.NET Frameworkから.NET Coreへの移行を提案",
             "モダンフロントエンドとしてSPAアプリケーションの開発を提案",
@@ -241,17 +240,17 @@
             "maintenance": false,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["Vue 2", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
             "backend": ["C#", "ASP.NET Core Web API", "SQL Server 2019"],
-            "server": ["Docker", "AWS Fargate", "AWS RDS"]
+            "infrastructure": ["Docker", "AWS Fargate", "AWS RDS"]
           }
         },
         {
           "name": "アシスト分科会 ソリューション研究会",
           "from": "2021年4月",
           "to": "2022年3月",
-          "features": [
+          "highlights": [
             "様々な業種の企業から代表1名が集まり、各テーマに関して議論、研究を行う研究会",
             "11名のチームのリーダーに立候補し、チームの取りまとめを行った",
             "コンテナ技術をこれから取り入れる際の勘所をまとめた論文を作成、プレゼンを行った"
@@ -267,15 +266,15 @@
             "maintenance": false,
             "others": true
           },
-          "techs": {
-            "server": ["Docker", "Kubernetes", "AWS", "Azure", "GCP"]
+          "techStack": {
+            "infrastructure": ["Docker", "Kubernetes", "AWS", "Azure", "GCP"]
           }
         },
         {
           "name": "人事総務ポータルシステム開発",
           "from": "2020年4月",
           "to": "2021年3月",
-          "features": [
+          "highlights": [
             "プロジェクト全体の要件定義、見積もり、交渉、設計、進捗管理、課題管理を担当",
             "海外オフショアメンバーとの連携を行い、仕様指示及び品質管理を行った",
             "PHPの言語指定のみであったため、顧客にLaravel/Vueでの開発を提案",
@@ -296,17 +295,17 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["Vue 2", "Bootstrap", "JavaScript", "HTML", "CSS"],
-            "backend": ["Laravel", "PHP", "IBM Db2", "MySQL", "Redis", "IIS"],
-            "server": ["Windows Server 2016"]
+            "backend": ["Laravel", "PHP", "IBM Db2", "MySQL", "Redis"],
+            "infrastructure": ["Windows Server 2016", "IIS"]
           }
         },
         {
           "name": "原価企画システム開発",
           "from": "2019年4月",
           "to": "2020年3月",
-          "features": [
+          "highlights": [
             "プロジェクト全体の要件定義、見積もり、顧客折衝、設計、進捗管理、課題管理を担当",
             "海外オフショアメンバーとの連携を行い、仕様指示及び品質管理を行った",
             "原価集計コアロジックなどの複雑な処理の実装を担当",
@@ -324,17 +323,17 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["VB.NET", "WinForms"],
-            "backend": ["ASP.NET", "Oracle Database 12c", "IIS"],
-            "server": ["Windows Server 2019", "Active Directory"]
+            "backend": ["ASP.NET", "Oracle Database 12c"],
+            "infrastructure": ["Windows Server 2019", "IIS", "Active Directory"]
           }
         },
         {
           "name": "クレーム報告システム開発",
           "from": "2018年4月",
           "to": "2019年3月",
-          "features": [
+          "highlights": [
             "プロジェクト全体の要件定義、見積もり、設計、実装、課題管理を担当"
           ],
           "roles": ["リードエンジニア"],
@@ -348,7 +347,7 @@
             "maintenance": true,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": [
               "jQuery",
               "Wijimo",
@@ -357,15 +356,15 @@
               "HTML",
               "CSS"
             ],
-            "backend": ["Java", "SAStruts", "SQL Server 2016", "IIS"],
-            "server": ["Windows Server 2016"]
+            "backend": ["Java", "SAStruts", "SQL Server 2016"],
+            "infrastructure": ["Windows Server 2016", "IIS"]
           }
         },
         {
           "name": "生産管理システム在庫関連機能改修",
           "from": "2017年11月",
           "to": "2018年3月",
-          "features": [
+          "highlights": [
             "在庫関連機能改修の影響範囲確認、実装、テスト、設計書修正を担当"
           ],
           "roles": ["エンジニア"],
@@ -379,17 +378,17 @@
             "maintenance": false,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["jQuery", "Bootstrap", "JavaScript"],
-            "backend": ["ASP.NET", "SQL", "IBM Db2", "IIS"],
-            "server": ["Windows Server 2016"]
+            "backend": ["ASP.NET", "SQL", "IBM Db2"],
+            "infrastructure": ["Windows Server 2016", "IIS"]
           }
         },
         {
           "name": "生産準備システム開発",
           "from": "2017年4月",
           "to": "2017年10月",
-          "features": [
+          "highlights": [
             "マスタ設定画面や帳票出力機能、メール配信機能の実装を担当"
           ],
           "roles": ["エンジニア"],
@@ -403,17 +402,17 @@
             "maintenance": false,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": ["VB.NET", "WinForms", "SPREAD for Windows Forms"],
-            "backend": ["ASP.NET", "SQL", "Oracle Database 12c", "IIS"],
-            "server": ["Windows Server 2016"]
+            "backend": ["ASP.NET", "SQL", "Oracle Database 12c"],
+            "infrastructure": ["Windows Server 2016", "IIS"]
           }
         },
         {
           "name": "販売管理システム開発",
           "from": "2016年9月",
           "to": "2017年3月",
-          "features": ["マスタ設定画面や帳票出力機能の実装を担当"],
+          "highlights": ["マスタ設定画面や帳票出力機能の実装を担当"],
           "roles": ["エンジニア"],
           "teamSize": 6,
           "phases": {
@@ -425,7 +424,7 @@
             "maintenance": false,
             "others": false
           },
-          "techs": {
+          "techStack": {
             "frontend": [
               "VB.NET",
               "WinForms",
@@ -433,7 +432,7 @@
               "ActiveReports for .NET"
             ],
             "backend": ["SQL", "IBM Db2"],
-            "server": ["Windows Server 2012R2"]
+            "infrastructure": ["Windows Server 2012R2"]
           }
         }
       ]

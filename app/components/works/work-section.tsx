@@ -1,14 +1,9 @@
-import { ProjectCard, type Project } from "./project";
+import type { Work } from "~/types/work";
+import { ProjectCard } from "./project-card";
 
-type Work = {
-  company: string;
-  from: string;
-  to: string;
-  position: string;
-  projects: Project[];
-};
+function WorkSection({ work }: { work: Work }) {
+  const { company, from, to, position, projects } = work;
 
-function WorkSection({ company, from, to, position, projects }: Work) {
   return (
     <div className="mb-6">
       <div className="flex justify-between items-center mb-1">
@@ -24,13 +19,11 @@ function WorkSection({ company, from, to, position, projects }: Work) {
 
       <div className="flex flex-col space-y-2">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
     </div>
   );
 }
-
-export type { Work };
 
 export { WorkSection };

@@ -1,0 +1,41 @@
+type Project = {
+  name: string;
+  from: string;
+  to: string;
+  highlights: string[];
+  roles: string[];
+  teamSize: number;
+  teamSizeOffshore?: number;
+  phases: ProjectPhases;
+  techStack: ProjectTechStack;
+};
+
+type ProjectPhases = {
+  requirements: boolean;
+  design: boolean;
+  development: boolean;
+  testing: boolean;
+  deployment: boolean;
+  maintenance: boolean;
+  others: boolean;
+};
+
+const projectPhaseNames: Record<keyof ProjectPhases, string> = {
+  requirements: "要件定義",
+  design: "設計",
+  development: "実装",
+  testing: "テスト",
+  deployment: "導入",
+  maintenance: "運用/保守",
+  others: "その他",
+};
+
+type ProjectTechStack = {
+  frontend?: string[];
+  backend?: string[];
+  infrastructure?: string[];
+};
+
+export type { Project, ProjectPhases, ProjectTechStack };
+
+export { projectPhaseNames };

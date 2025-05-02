@@ -1,7 +1,7 @@
-import type { Project } from "~/types/work";
-import { Badge } from "./ui/badge";
-import { ProjectPhasesTimeline } from "./project-phases-timeline";
-import { Calendar, User, Users } from "lucide-react";
+import type { Project } from '~/types/work'
+import { Badge } from './ui/badge'
+import { ProjectPhasesTimeline } from './project-phases-timeline'
+import { Calendar, User, Users } from 'lucide-react'
 
 export function ProjectContent({ project }: { project: Project }) {
   const {
@@ -15,18 +15,18 @@ export function ProjectContent({ project }: { project: Project }) {
     teamSizeOffshore,
     phases,
     techStack,
-  } = project;
+  } = project
 
   const teamSizeText = teamSizeOffshore
     ? `${teamSize}名 (うち海外${teamSizeOffshore}名)`
-    : `${teamSize}名`;
+    : `${teamSize}名`
 
-  const rolesText = roles.join(" / ");
+  const rolesText = roles.join(' / ')
 
   const techs = Object.entries(techStack)
     .filter(([, value]) => value.length > 0)
     .map(([, value]) => value)
-    .flat();
+    .flat()
 
   return (
     <section>
@@ -78,5 +78,5 @@ export function ProjectContent({ project }: { project: Project }) {
         </div>
       </div>
     </section>
-  );
+  )
 }

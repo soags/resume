@@ -1,8 +1,8 @@
-import type { TechStack } from "~/types/resume";
-import { Badge } from "./ui/badge";
+import type { TechStack } from '~/types/resume'
+import { Badge } from './ui/badge'
 
 export function TechStackContent({ techStack }: { techStack: TechStack }) {
-  const { frontend, backend, infrastructure, tools } = techStack;
+  const { frontend, backend, infrastructure, tools } = techStack
 
   return (
     <div className="space-y-2">
@@ -11,12 +11,12 @@ export function TechStackContent({ techStack }: { techStack: TechStack }) {
       <TechStackRow title="インフラ" items={infrastructure} />
       <TechStackRow title="ツール" items={tools} />
     </div>
-  );
+  )
 }
 
 function TechStackRow({ title, items }: { title: string; items?: string[] }) {
   if (!items || items.length === 0) {
-    return null;
+    return null
   }
 
   return (
@@ -34,5 +34,5 @@ function TechStackRow({ title, items }: { title: string; items?: string[] }) {
         ))}
       </div>
     </div>
-  );
+  )
 }

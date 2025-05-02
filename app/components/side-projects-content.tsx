@@ -1,14 +1,14 @@
-import { Github, Globe, TerminalSquare } from "lucide-react";
-import { Badge } from "./ui/badge";
-import { Link } from "./ui/link";
-import type { Basics, SideProject } from "~/types/resume";
+import { Github, Globe, TerminalSquare } from 'lucide-react'
+import { Badge } from './ui/badge'
+import { Link } from './ui/link'
+import type { Basics, SideProject } from '~/types/resume'
 
 export function SideProjectsContent({
   basics,
   sideProjects,
 }: {
-  basics: Basics;
-  sideProjects: SideProject[];
+  basics: Basics
+  sideProjects: SideProject[]
 }) {
   return (
     <div className="space-y-2">
@@ -52,7 +52,7 @@ export function SideProjectsContent({
         </div>
       </SideProjectCard>
     </div>
-  );
+  )
 }
 
 function SideProjectCard({
@@ -68,5 +68,5 @@ function SideProjectCard({
       </div>
       {children}
     </div>
-  );
+  )
 }

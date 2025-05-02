@@ -1,9 +1,9 @@
-import type { Work } from "~/types/work";
-import { Calendar } from "lucide-react";
-import { ProjectContent } from "./project-content";
+import type { Work } from '~/types/work'
+import { Calendar } from 'lucide-react'
+import { ProjectContent } from './project-content'
 
 export function WorkContent({ work }: { work: Work }) {
-  const { company, from, to, position, projects } = work;
+  const { company, from, to, position, projects } = work
 
   return (
     <>
@@ -27,5 +27,5 @@ export function WorkContent({ work }: { work: Work }) {
         ))}
       </div>
     </>
-  );
+  )
 }

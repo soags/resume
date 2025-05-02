@@ -1,23 +1,23 @@
-import { Award, Calendar, GraduationCap } from "lucide-react";
-import resumeData from "~/data/resume.json";
-import type { Certification, Education, Resume } from "~/types/resume";
-import { TechStackContent } from "~/components/tech-stack-content";
-import { WorkContent } from "~/components/work-content";
-import { Section } from "~/components/section";
-import { Paper } from "~/components/paper";
-import { SideProjectsContent } from "~/components/side-projects-content";
+import { Award, Calendar, GraduationCap } from 'lucide-react'
+import resumeData from '~/data/resume.json'
+import type { Certification, Education, Resume } from '~/types/resume'
+import { TechStackContent } from '~/components/tech-stack-content'
+import { WorkContent } from '~/components/work-content'
+import { Section } from '~/components/section'
+import { Paper } from '~/components/paper'
+import { SideProjectsContent } from '~/components/side-projects-content'
 
-const resume: Resume = resumeData;
+const resume: Resume = resumeData
 
 export function meta() {
   return [
-    { title: "職務経歴書" },
-    { name: "description", content: "職務経歴書" },
-  ];
+    { title: '職務経歴書' },
+    { name: 'description', content: '職務経歴書' },
+  ]
 }
 
 export default function Resume() {
-  const summaryParagraphs = resume.basics.summary.split("\n");
+  const summaryParagraphs = resume.basics.summary.split('\n')
 
   return (
     <div className="max-w-4xl mx-auto bg-white overflow-hidden">
@@ -81,7 +81,7 @@ export default function Resume() {
               <div key={item.title}>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <div className="text-gray-800 pl-2">
-                  {item.description.split("\n").map((line, index) => (
+                  {item.description.split('\n').map((line, index) => (
                     <p key={index}>{line}</p>
                   ))}
                 </div>
@@ -112,10 +112,10 @@ export default function Resume() {
               <CertificationItem key={item.name} certification={item} />
             ))}
           </div>
-        </Section>        
+        </Section>
       </div>
     </div>
-  );
+  )
 }
 
 function EducationItem({ education }: { education: Education }) {
@@ -132,13 +132,13 @@ function EducationItem({ education }: { education: Education }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function CertificationItem({
   certification,
 }: {
-  certification: Certification;
+  certification: Certification
 }) {
   return (
     <div className="flex items-start gap-4">
@@ -148,5 +148,5 @@ function CertificationItem({
         <p className="text-gray-500 text-sm">{`${certification.year}年取得`}</p>
       </div>
     </div>
-  );
+  )
 }

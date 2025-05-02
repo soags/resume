@@ -27,7 +27,7 @@ function TechStackRow({ title, items }: { title: string; items?: string[] }) {
           <Badge
             key={item}
             variant="outline"
-            className="bg-sky-900 text-white text-sm font-medium"
+            className="bg-sky-900 text-white text-sm"
           >
             {item}
           </Badge>

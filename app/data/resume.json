@@ -482,21 +482,6 @@
   ],
   "sideProjects": [
     {
-      "title": "Tab Cutter",
-      "url": "https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb",
-      "keywords": ["TypeScript"]
-    },
-    {
-      "title": "temp-dir-cli",
-      "url": "https://www.npmjs.com/package/temp-dir-cli",
-      "keywords": ["TypeScript"]
-    },
-    {
-      "title": "zenn-create",
-      "url": "https://www.npmjs.com/package/zenn-create",
-      "keywords": ["TypeScript"]
-    },
-    {
       "title": "職務経歴書(本書)",
       "url": "https://github.com/soags/resume",
       "keywords": [
@@ -506,6 +491,21 @@
         "Tailwind CSS",
         "shadcn/ui"
       ]
-    }
+    },
+    {
+      "title": "Chrome拡張機能 - Tab Cutter",
+      "url": "https://chromewebstore.google.com/detail/mekmindbhhjinkmgdjabpgfkaekhmgkj?utm_source=item-share-cb",
+      "keywords": ["TypeScript"]
+    },
+    {
+      "title": "npmパッケージ - temp-dir-cli",
+      "url": "https://www.npmjs.com/package/temp-dir-cli",
+      "keywords": ["TypeScript"]
+    },
+    {
+      "title": "npmパッケージ - zenn-create",
+      "url": "https://www.npmjs.com/package/zenn-create",
+      "keywords": ["TypeScript"]
+    }   
   ]
 }

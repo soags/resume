@@ -27,7 +27,7 @@ export function ProjectContent({ project }: { project: Project }) {
     .flat();
 
   return (
-    <div className="print:break-inside-avoid pt-8">
+    <section className="">
       <div className="border-l-4 border-sky-900 pl-4">
         <h3 className="text-lg font-semibold">{name}</h3>
         <p className="text-gray-500 text-sm mb-2">
@@ -35,10 +35,10 @@ export function ProjectContent({ project }: { project: Project }) {
         </p>
 
         {/* 概要 */}
-        <p className="text-gray-700">{description}</p>
+        <p className="text-gray-800">{description}</p>
 
         {/* ハイライト */}
-        <ul className="list-disc list-inside mt-3 text-gray-700">
+        <ul className="list-disc list-inside mt-3 text-gray-800">
           {highlights.map((highlight) => (
             <li key={highlight}>{highlight}</li>
           ))}
@@ -53,6 +53,6 @@ export function ProjectContent({ project }: { project: Project }) {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

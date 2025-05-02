@@ -10,7 +10,7 @@ export function WorkContent({ work }: { work: Work }) {
       <div className="pb-2">
         <div className="flex justify-between items-start">
           <div>
-            <h3 className="text-xl font-bold">{company}</h3>
+            <h3 className="text-lg font-bold">{company}</h3>
             <p className="text-gray-600">{position}</p>
           </div>
           <div className="flex items-center text-sm text-gray-500">
@@ -21,7 +21,7 @@ export function WorkContent({ work }: { work: Work }) {
           </div>
         </div>
       </div>
-      <div>
+      <div className="space-y-6 pt-2">
         {projects.map((project) => (
           <ProjectContent key={project.name} project={project} />
         ))}

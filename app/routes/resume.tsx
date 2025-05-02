@@ -22,11 +22,11 @@ export default function Resume() {
   return (
     <div className="max-w-4xl mx-auto bg-white overflow-hidden">
       {/* ヘッダー */}
-      <div className="border-b p-8">
+      <div className="border-b p-4">
         <div className="flex flex-col md:flex-row justify-between items-start gap-4">
           <div>
-            <h1 className="text-3xl font-bold">{resume.basics.name}</h1>
-            <p className="text-xl mt-1">{resume.basics.label}</p>
+            <h1 className="text-2xl font-bold">{resume.basics.name}</h1>
+            <p className="mt-1 text-gray-800">{resume.basics.label}</p>
           </div>
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
             <div className="flex items-center text-gray-500">
@@ -37,16 +37,15 @@ export default function Resume() {
         </div>
       </div>
 
-      <div className="p-8">
+      <div className="px-4 pb-16 pt-0">
         {/* 職務要約 */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">職務要約</h2>
-          <div className="text-gray-700">
+        <Section title="職務要約">
+          <div className="text-gray-800">
             {summaryParagraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
           </div>
-        </section>
+        </Section>
 
         {/* 技術スタック */}
         <Section title="技術スタック">
@@ -57,19 +56,17 @@ export default function Resume() {
 
         {/* スキル */}
         <Section title="スキル">
-          <Paper>
-            <ul className="list-disc list-inside space-y-2">
+          <Paper className="text-gray-800">
+            <ul className="list-disc list-inside space-y-1">
               {resume.highlights.map((highlight) => (
-                <li key={highlight} className="font-medium">
-                  {highlight}
-                </li>
+                <li key={highlight}>{highlight}</li>
               ))}
             </ul>
           </Paper>
         </Section>
 
         {/* 職務経歴 */}
-        <Section title="職務経歴" className="print:break-before-page">
+        <Section title="職務経歴">
           {resume.work.map((item) => (
             <Paper>
               <WorkContent key={item.company} work={item} />
@@ -78,18 +75,28 @@ export default function Resume() {
         </Section>
 
         {/* 自己PR */}
-        <Section title="自己PR" className="print:break-before-page">
+        <Section title="自己PR">
           <Paper className="space-y-4">
             {resume.promotions.map((item) => (
               <div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <div className="text-gray-700 pl-2">
+                <div className="text-gray-800 pl-2">
                   {item.description.split("\n").map((line, index) => (
                     <p key={index}>{line}</p>
                   ))}
                 </div>
               </div>
             ))}
+          </Paper>
+        </Section>
+
+        {/* 業務外活動 */}
+        <Section title="業務外活動">
+          <Paper>
+            <SideProjectsContent
+              basics={resume.basics}
+              sideProjects={resume.sideProjects}
+            />
           </Paper>
         </Section>
 
@@ -105,17 +112,7 @@ export default function Resume() {
               <CertificationItem key={item.name} certification={item} />
             ))}
           </div>
-        </Section>
-
-        {/* 業務外活動 */}
-        <Section title="業務外活動" className="print:break-before-page">
-          <Paper>
-            <SideProjectsContent
-              basics={resume.basics}
-              sideProjects={resume.sideProjects}
-            />
-          </Paper>
-        </Section>
+        </Section>        
       </div>
     </div>
   );
@@ -126,7 +123,7 @@ function EducationItem({ education }: { education: Education }) {
     <div className="flex items-start gap-4">
       <GraduationCap className="h-5 w-5 text-gray-500 mt-1" />
       <div>
-        <h3 className="text-lg font-semibold">{`${education.institution} ${education.area}`}</h3>
+        <h3 className="font-semibold">{`${education.institution} ${education.area}`}</h3>
         <div className="flex items-center text-sm text-gray-500 mt-1">
           <Calendar className="h-4 w-4 mr-1" />
           <span>
@@ -147,8 +144,8 @@ function CertificationItem({
     <div className="flex items-start gap-4">
       <LucideBadge className="h-5 w-5 text-gray-500 mt-1" />
       <div>
-        <h3 className="text-lg font-semibold">{certification.name}</h3>
-        <p className="text-gray-600 text-sm">{`${certification.year}年取得`}</p>
+        <h3 className="font-semibold">{certification.name}</h3>
+        <p className="text-gray-500 text-sm">{`${certification.year}年取得`}</p>
       </div>
     </div>
   );

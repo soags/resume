@@ -43,19 +43,13 @@ jobs:
           echo "Generated files:"
           ls -lh
 
-      - name: Create Release (if not exists)
-        uses: softprops/action-gh-release@v1
+      - name: Upload PDF to Release
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           name: PDF Release
-          token: ${{ secrets.GH_PAT }}
+          files: 職務経歴書.pdf
+          overwrite: true
           draft: false
           prerelease: false
-          make_latest: true
-
-      - name: Upload PDF to Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: latest
-          files: 職務経歴書.pdf
           token: ${{ secrets.GH_PAT }}

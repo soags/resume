@@ -43,6 +43,20 @@ jobs:
           echo "Generated files:"
           ls -lh
 
+      - name: Delete existing asset if exists
+        run: |
+          ASSET_ID=$(gh api repos/${{ github.repository }}/releases/tags/latest \
+            | jq '.assets[] | select(.name == "職務経歴書.pdf") | .id')
+
+          if [ -n "$ASSET_ID" ]; then
+            echo "Deleting asset $ASSET_ID"
+            gh api repos/${{ github.repository }}/releases/assets/$ASSET_ID -X DELETE
+          else
+            echo "No existing asset to delete"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+
       - name: Upload PDF to Release
         uses: softprops/action-gh-release@v2
         with:

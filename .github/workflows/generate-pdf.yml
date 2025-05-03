@@ -1,0 +1,61 @@
+name: Generate PDF from GitHub Pages
+
+on:
+  workflow_run:
+    workflows: ['Deploy']
+    types:
+      - completed
+
+jobs:
+  generate-and-release:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Puppeteer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 \
+            libxi6 libxtst6 libnss3 libasound2 \
+            libatk-bridge2.0-0 libgtk-3-0 libxrandr2 libgbm-dev
+
+      - name: Wait for deployment to complete
+        run: sleep 20 # 必要に応じて調整
+
+      - name: Generate PDF
+        run: node generate-pdf.js
+
+      - name: Get generated PDF file name
+        id: get-pdf
+        run: |
+          FILE=$(ls 職務経歴書_*.pdf)
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Create Release (if not exists)
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          name: Resume PDF Release
+          token: ${{ secrets.GH_PAT }}
+          draft: false
+          prerelease: false
+
+      - name: Upload PDF to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          files: ${{ steps.get-pdf.outputs.file }}
+          token: ${{ secrets.GH_PAT }}

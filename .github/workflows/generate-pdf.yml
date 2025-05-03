@@ -52,4 +52,5 @@ jobs:
           overwrite: true
           draft: false
           prerelease: false
+          make_latest: true
           token: ${{ secrets.GH_PAT }}

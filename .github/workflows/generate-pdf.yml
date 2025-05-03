@@ -1,22 +1,16 @@
-name: Generate PDF from GitHub Pages
+name: Generate PDF and Upload to Release
 
 on:
-  workflow_run:
-    workflows: ['Deploy']
-    types:
-      - completed
+  workflow_dispatch:
 
 jobs:
   generate-and-release:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
@@ -32,28 +26,24 @@ jobs:
             libxi6 libxtst6 libnss3 libasound2 \
             libatk-bridge2.0-0 libgtk-3-0 libxrandr2 libgbm-dev
 
-      - name: Wait for deployment to complete
-        run: sleep 20 # 必要に応じて調整
+      - name: Wait for GitHub Pages to deploy
+        run: sleep 20
 
       - name: Generate PDF
         run: node generate-pdf.js
 
-      - name: Check PDF output
-        run: |
-          echo "Generated files:"
-          ls -lh
+      - name: Confirm generated file
+        run: ls -lh
 
-      - name: Delete existing asset if exists
+      - name: Delete existing PDF asset (if exists)
         run: |
-          ASSET_ID=$(gh api repos/${{ github.repository }}/releases/tags/latest \
-            | jq '.assets[] | select(.name == "職務経歴書.pdf") | .id')
-
-          if [ -n "$ASSET_ID" ]; then
-            echo "Deleting asset $ASSET_ID"
-            gh api repos/${{ github.repository }}/releases/assets/$ASSET_ID -X DELETE
-          else
-            echo "No existing asset to delete"
-          fi
+          echo "Searching for existing PDF assets..."
+          gh api repos/${{ github.repository }}/releases/tags/latest \
+            | jq -r '.assets[] | [.id, .name] | @tsv' \
+            | grep '職務経歴書.pdf' | while IFS=$'\t' read -r ID NAME; do
+                echo "Deleting $NAME (ID: $ID)"
+                gh api repos/${{ github.repository }}/releases/assets/$ID -X DELETE
+              done
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
 
@@ -65,5 +55,5 @@ jobs:
           files: 職務経歴書.pdf
           draft: false
           prerelease: false
-          make_latest: true
-          token: ${{ secrets.GH_PAT }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}

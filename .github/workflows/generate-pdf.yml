@@ -24,13 +24,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Puppeteer OS dependencies
+      - name: Install Puppeteer dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
             libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 \
-            libxi6 libxtst6 libnss3 libatk-bridge2.0-0 \
-            libgtk-3-0 libxrandr2 libgbm-dev libasound2t64
+            libxi6 libxtst6 libnss3 libasound2 \
+            libatk-bridge2.0-0 libgtk-3-0 libxrandr2 libgbm-dev
 
       - name: Wait for deployment to complete
         run: sleep 20 # 必要に応じて調整

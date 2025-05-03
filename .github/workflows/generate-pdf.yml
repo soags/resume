@@ -38,12 +38,6 @@ jobs:
       - name: Generate PDF
         run: node generate-pdf.js
 
-      - name: Get generated PDF file name
-        id: get-pdf
-        run: |
-          FILE=$(ls 職務経歴書_*.pdf)
-          echo "file=$FILE" >> "$GITHUB_OUTPUT"
-
       - name: Create Release (if not exists)
         uses: softprops/action-gh-release@v1
         with:
@@ -57,5 +51,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: latest
-          files: ${{ steps.get-pdf.outputs.file }}
+          files: 職務経歴書.pdf
           token: ${{ secrets.GH_PAT }}

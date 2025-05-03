@@ -1,7 +1,10 @@
 name: Generate PDF and Upload to Release
 
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ['Deploy']
+    types:
+      - completed
 
 jobs:
   generate-and-release:
@@ -40,7 +43,7 @@ jobs:
           echo "Searching for existing PDF assets..."
           gh api repos/${{ github.repository }}/releases/tags/latest \
             | jq -r '.assets[] | [.id, .name] | @tsv' \
-            | grep '職務経歴書.pdf' | while IFS=$'\t' read -r ID NAME; do
+            | grep 'resume.pdf' | while IFS=$'\t' read -r ID NAME; do
                 echo "Deleting $NAME (ID: $ID)"
                 gh api repos/${{ github.repository }}/releases/assets/$ID -X DELETE
               done
@@ -52,7 +55,7 @@ jobs:
         with:
           tag_name: latest
           name: PDF Release
-          files: 職務経歴書.pdf
+          files: resume.pdf
           draft: false
           prerelease: false
         env:

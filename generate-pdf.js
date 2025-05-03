@@ -8,7 +8,7 @@ import puppeteer from 'puppeteer'
   await page.goto(URL, { waitUntil: 'networkidle0' })
 
   await page.pdf({
-    path: '職務経歴書.pdf',
+    path: 'resume.pdf',
     format: 'A4',
     printBackground: true,
   })

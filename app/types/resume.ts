@@ -5,7 +5,6 @@ export type Resume = {
   techStack: TechStack
   highlights: string[]
   work: Work[]
-  education: Education
   certificates: Certification[]
   promotions: Promotion[]
   sideProjects: SideProject[]
@@ -25,13 +24,6 @@ export type TechStack = {
   backend: string[]
   infrastructure: string[]
   tools: string[]
-}
-
-export type Education = {
-  institution: string
-  area: string
-  startDate: string
-  endDate: string
 }
 
 export type Certification = {

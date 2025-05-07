@@ -1,6 +1,6 @@
-import { Award, Calendar, GraduationCap } from 'lucide-react'
+import { Award, Calendar } from 'lucide-react'
 import resumeData from '~/data/resume.json'
-import type { Certification, Education, Resume } from '~/types/resume'
+import type { Certification, Resume } from '~/types/resume'
 import { TechStackContent } from '~/components/tech-stack-content'
 import { WorkContent } from '~/components/work-content'
 import { Section } from '~/components/section'
@@ -100,11 +100,6 @@ export default function Resume() {
           </Paper>
         </Section>
 
-        {/* 学歴 */}
-        <Section title="学歴">
-          <EducationItem education={resume.education} />
-        </Section>
-
         {/* 資格 */}
         <Section title="資格">
           <div className="space-y-4">
@@ -113,23 +108,6 @@ export default function Resume() {
             ))}
           </div>
         </Section>
-      </div>
-    </div>
-  )
-}
-
-function EducationItem({ education }: { education: Education }) {
-  return (
-    <div className="flex items-start gap-4">
-      <GraduationCap className="h-5 w-5 text-gray-500 mt-1" />
-      <div>
-        <h3 className="font-semibold">{`${education.institution} ${education.area}`}</h3>
-        <div className="flex items-center text-sm text-gray-500 mt-1">
-          <Calendar className="h-4 w-4 mr-1" />
-          <span>
-            {education.startDate} - {education.endDate}
-          </span>
-        </div>
       </div>
     </div>
   )

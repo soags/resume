@@ -29,6 +29,7 @@ export type TechStack = {
 export type Certification = {
   name: string
   year: number
+  month: number
 }
 
 export type Promotion = {

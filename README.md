@@ -1,7 +1,5 @@
 # 📄 職務経歴書
 
-## Data
-
 - [Web版（GitHub Pages）](https://soags.github.io/resume/)
 - [PDF版（GitHub Release）](https://github.com/soags/resume/releases/download/latest/resume.pdf)
 - [元データ（resume.json）](https://github.com/soags/resume/blob/main/app/data/resume.json)

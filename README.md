@@ -26,9 +26,9 @@ Webページを元にPDFを作成することで、WordやExcelでは表現し�
 
 ## 使用技術
 
-| カテゴリ       | 技術スタック                                                 |
-| -------------- | ------------------------------------------------------------ |
-| フロントエンド | TypeScript, React 19, React Router 7, Tailwind CSS shadcn/ui |
-| PDF生成        | Puppeteer                                                    |
-| CI/CD          | GitHub Actions                                               |
-| その他         | ESLint, Prettier, Git, GitHub                                |
+| カテゴリ       | 技術スタック                                                  |
+| -------------- | ------------------------------------------------------------- |
+| フロントエンド | TypeScript, React 19, React Router 7, Tailwind CSS, shadcn/ui |
+| PDF生成        | Puppeteer                                                     |
+| CI/CD          | GitHub Actions                                                |
+| その他         | ESLint, Prettier, Git, GitHub                                 |
